@@ -4,6 +4,7 @@
     "baseUrl": ".",
     "composite": false,
     "paths": {
+      "@dvw/core": ["../../packages/core/src/index.ts"],
       "@dvw/evidence-store-sqlite": [
         "../../packages/evidence-store-sqlite/src/index.ts"
       ],
