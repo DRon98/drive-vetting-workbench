@@ -8,6 +8,10 @@ interface RootPackage {
 const rootPackage = JSON.parse(
   readFileSync(new URL("../package.json", import.meta.url), "utf8"),
 ) as RootPackage;
+const eslintConfigSource = readFileSync(
+  new URL("../eslint.config.js", import.meta.url),
+  "utf8",
+);
 
 describe("root verification scripts", () => {
   it("runs scaffold probes through the full CI command", () => {
@@ -26,6 +30,10 @@ describe("root verification scripts", () => {
     );
     expect(buildIndex).toBeLessThan(scaffoldSteps.indexOf("pnpm lint"));
     expect(buildIndex).toBeLessThan(scaffoldSteps.indexOf("pnpm typecheck"));
+  });
+
+  it("keeps retained nested worktrees outside the root lint boundary", () => {
+    expect(eslintConfigSource).toContain('".worktrees/**"');
   });
 
   it.each(["test:integration", "test:e2e", "test:security"])(
