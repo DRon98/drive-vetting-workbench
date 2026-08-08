@@ -7,6 +7,7 @@
       "@dvw/core": ["../core/src/index.ts"],
       "@dvw/decision-memory": ["../decision-memory/src/index.ts"],
       "@dvw/evidence-builder": ["../evidence-builder/src/index.ts"],
+      "@dvw/policy-engine": ["../policy-engine/src/index.ts"],
       "@dvw/reasoning": ["../reasoning/src/index.ts"]
     }
   },
