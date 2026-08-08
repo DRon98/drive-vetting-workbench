@@ -5,7 +5,9 @@
     "composite": false,
     "paths": {
       "@dvw/core": ["../core/src/index.ts"],
-      "@dvw/evidence-builder": ["../evidence-builder/src/index.ts"]
+      "@dvw/evidence-builder": ["../evidence-builder/src/index.ts"],
+      "@dvw/evidence-store-sqlite": ["../evidence-store-sqlite/src/index.ts"],
+      "@dvw/policy-engine": ["../policy-engine/src/index.ts"]
     }
   },
   "include": ["src/**/*.ts", "vitest.config.ts"]
