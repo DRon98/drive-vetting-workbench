@@ -12,6 +12,10 @@ const eslintConfigSource = readFileSync(
   new URL("../eslint.config.js", import.meta.url),
   "utf8",
 );
+const ciWorkflowSource = readFileSync(
+  new URL("../.github/workflows/ci.yml", import.meta.url),
+  "utf8",
+);
 
 describe("root verification scripts", () => {
   it("runs scaffold probes through the full CI command", () => {
@@ -34,6 +38,16 @@ describe("root verification scripts", () => {
 
   it("keeps retained nested worktrees outside the root lint boundary", () => {
     expect(eslintConfigSource).toContain('".worktrees/**"');
+  });
+
+  it("installs Playwright Chromium before the CI verification command", () => {
+    const installIndex = ciWorkflowSource.indexOf(
+      "pnpm exec playwright install --with-deps chromium",
+    );
+    const verifyIndex = ciWorkflowSource.indexOf("pnpm verify");
+
+    expect(installIndex).toBeGreaterThan(-1);
+    expect(installIndex).toBeLessThan(verifyIndex);
   });
 
   it.each(["test:integration", "test:e2e", "test:security"])(
