@@ -1,0 +1,7 @@
+[mcp_servers.drive_vetting_workbench]
+command = "node"
+args = [
+  "/ABSOLUTE/PATH/drive-vetting-workbench/apps/mcp-server/dist/cli.js",
+  "--database",
+  "/ABSOLUTE/PATH/synthetic-evidence.sqlite",
+]

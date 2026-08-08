@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@dvw/core": ["../core/src/index.ts"],
+      "@dvw/evidence-store-sqlite": ["../evidence-store-sqlite/src/index.ts"],
+      "@dvw/reasoning": ["../reasoning/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "vitest.config.ts"]
+}

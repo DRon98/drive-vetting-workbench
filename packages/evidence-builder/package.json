@@ -1,0 +1,22 @@
+{
+  "name": "@dvw/evidence-builder",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dvw/core": "workspace:*",
+    "@dvw/evidence-store-sqlite": "workspace:*",
+    "@dvw/policy-engine": "workspace:*"
+  }
+}

@@ -1,0 +1,95 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`rebuilds a removed test database to an equivalent deterministic snapshot > fixture rebuild 1`] = `
+{
+  "coverage": {
+    "deniedItems": [],
+    "exportsAttempted": 0,
+    "generationId": "fixture-generation",
+    "itemCount": 2,
+    "pageTokensConsumed": [
+      "page-1",
+    ],
+    "rootId": "root",
+    "state": "Complete",
+    "unsupportedTypes": [],
+    "warnings": [],
+  },
+  "generation": {
+    "generationId": "fixture-generation",
+    "rootId": "root",
+    "startedAt": "2026-02-01T00:00:00.000Z",
+    "state": "Active",
+  },
+  "issues": [],
+  "items": [
+    {
+      "contentFingerprint": "sha256:alpha",
+      "contentLocator": "fixture:a#page=1",
+      "createdTime": "2026-01-01T00:00:00.000Z",
+      "extractedSnippet": "Synthetic A evidence.",
+      "id": "fixture-a",
+      "mimeType": "application/pdf",
+      "modifiedTime": "2026-01-02T00:00:00.000Z",
+      "name": "A.pdf",
+      "normalizedName": "a.pdf",
+      "parentIds": [
+        "root",
+      ],
+      "permissions": {
+        "canRead": true,
+        "canWrite": false,
+      },
+      "scanGeneration": "fixture-generation",
+      "shortcutTargetId": null,
+      "sizeBytes": 10,
+      "trashed": false,
+    },
+    {
+      "contentFingerprint": "sha256:fixture-b",
+      "contentLocator": "fixture:b#page=1",
+      "createdTime": "2026-01-01T00:00:00.000Z",
+      "extractedSnippet": "Synthetic B evidence.",
+      "id": "fixture-b",
+      "mimeType": "application/pdf",
+      "modifiedTime": "2026-01-02T00:00:00.000Z",
+      "name": "B.pdf",
+      "normalizedName": "b.pdf",
+      "parentIds": [
+        "root",
+      ],
+      "permissions": {
+        "canRead": true,
+        "canWrite": false,
+      },
+      "scanGeneration": "fixture-generation",
+      "shortcutTargetId": null,
+      "sizeBytes": 10,
+      "trashed": false,
+    },
+  ],
+  "relations": [
+    {
+      "generationId": "fixture-generation",
+      "kind": "Parent",
+      "sourceItemId": "fixture-a",
+      "sourceLocator": "observed:parentIds",
+      "targetId": "root",
+    },
+    {
+      "generationId": "fixture-generation",
+      "kind": "Evidence",
+      "sourceItemId": "fixture-b",
+      "sourceLocator": "fixture:evidence-b",
+      "targetId": "evidence:b",
+    },
+    {
+      "generationId": "fixture-generation",
+      "kind": "Parent",
+      "sourceItemId": "fixture-b",
+      "sourceLocator": "observed:parentIds",
+      "targetId": "root",
+    },
+  ],
+}
+`;

@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "composite": true,
+    "noEmit": false,
+    "outDir": "dist",
+    "paths": {
+      "@dvw/core": ["../core/dist/index.d.ts"]
+    },
+    "rootDir": "src"
+  },
+  "exclude": ["src/**/*.test.ts", "vitest.config.ts"]
+}

@@ -1,0 +1,16 @@
+{
+  "integrity": {
+    "algorithm": "sha256",
+    "files": {
+      "archive-rules.json": "c622379cf30efaac08f9181f0c487cd3dedd5094f966231a23a1ffb1f772e93a",
+      "document-types.json": "e126a1abc5c0babd7ddde1673e57a269f72f0ba39345915b1cd53832b5027f74",
+      "entities.json": "dd4f67b137cb6c5697de40962ab8e85b369c021ff01a38c8112d6044d1e588df",
+      "naming.json": "f41adb2137ad39270561df9f1d9a2ee7e8e413778d3bef78e28430a10185d2c0",
+      "precedents.json": "238c62038f5bbc41096e48a1cf8e16ccb6ba1096dd716bb4a7b8d82a23675368",
+      "protected-items.json": "1b1416dad1bf482f31186690211b006eb92d863121d70fc2535572a7ba041122",
+      "shortcut-rules.json": "5a32e6da18a513ce6f3eef1fc42c14a49f6fd7342b450be3b7f13b7a26f206dc",
+      "taxonomy.json": "be286288e984bccc6e4c2e0a18c47d49aa83bb420ededfd3d4538d7540e51e26"
+    }
+  },
+  "version": "1.0.0"
+}

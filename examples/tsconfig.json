@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": true,
+    "paths": {
+      "@dvw/core": ["packages/core/src/index.ts"]
+    }
+  },
+  "include": ["provider/**/*.ts"]
+}

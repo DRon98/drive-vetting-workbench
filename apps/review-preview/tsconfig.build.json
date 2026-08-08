@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "outDir": "dist",
+    "paths": {
+      "@dvw/change-planner": ["../../packages/change-planner/dist/index.d.ts"],
+      "@dvw/cli": ["../cli/dist/index.d.ts"],
+      "@dvw/core": ["../../packages/core/dist/index.d.ts"],
+      "@dvw/drive-simulator": [
+        "../../packages/drive-simulator/dist/index.d.ts"
+      ],
+      "@dvw/evidence-builder": [
+        "../../packages/evidence-builder/dist/index.d.ts"
+      ],
+      "@dvw/feedback": ["../../packages/feedback/dist/index.d.ts"],
+      "@dvw/review-artifact": ["../../packages/review-artifact/dist/index.d.ts"]
+    },
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts"]
+}

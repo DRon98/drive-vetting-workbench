@@ -1,0 +1,12 @@
+[
+  {
+    "decision": "Preserve the original hierarchy when archive folders carry identity.",
+    "key": "archive.preserve-identity-hierarchy",
+    "scope": "global"
+  },
+  {
+    "decision": "Use one organizational shortcut unless a versioned exception applies.",
+    "key": "shortcut.default-limit",
+    "scope": "global"
+  }
+]

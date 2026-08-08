@@ -1,0 +1,35 @@
+{
+  "actions": [
+    {
+      "actionId": "act_f208fed64af80d278855ea1891d919f9",
+      "comment": "Browser fixture action comment.",
+      "disposition": "Edit",
+      "proposedName": "2026-08-02 - Hotel Paisano - Paid Invoice.pdf",
+      "reason": {
+        "code": "PAID_DATE_CONFIRMED",
+        "detail": "Browser fixture structured reason."
+      }
+    }
+  ],
+  "artifactVersion": "dvw.review.v1",
+  "checksum": "58a06d7024142aaa372b56c709fb247ce05814a3926cb4fc737c3864b4c23b99",
+  "exportedAt": "2026-08-08T16:00:00.000Z",
+  "globalComment": "Browser fixture global comment; feedback only.",
+  "packetVersion": "dvw.feedback.v1",
+  "planHash": "a852a865112a6e9420c9e79f070e1dce6e0aab8498cc11232b2be2d7f06edaae",
+  "policyVersion": "1.0.0",
+  "questions": [
+    {
+      "answer": "Invoice body date",
+      "comment": "Browser fixture question comment.",
+      "questionKey": "question-messy-invoice-date-source",
+      "scope": {
+        "id": "messy-invoice-draft",
+        "type": "item"
+      }
+    }
+  ],
+  "reviewRound": 1,
+  "reviewer": "Buck reviewer",
+  "scanGeneration": "scan-review-fixture-1"
+}

@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`read-only scan integration > consumes every page, persists explicit gaps, and publishes atomically > fixture coverage report 1`] = `
+{
+  "deniedItems": [
+    {
+      "itemId": "denied",
+      "reason": "Synthetic permission gap",
+    },
+  ],
+  "exportsAttempted": 3,
+  "generationId": "scan-complete",
+  "itemCount": 8,
+  "pageTokensConsumed": [
+    "fake-page-token-1",
+    "fake-page-token-2",
+    "fake-page-token-3",
+  ],
+  "rootId": "root",
+  "state": "Complete",
+  "unsupportedTypes": [
+    {
+      "itemId": "binary",
+      "mimeType": "application/x-synthetic-binary",
+    },
+    {
+      "itemId": "missing-export",
+      "mimeType": "application/vnd.google-apps.document",
+    },
+  ],
+  "warnings": [
+    "BROKEN_SHORTCUT: Shortcut target missing-target does not exist or cannot be fetched.",
+    "SHORTCUT_CYCLE: Shortcut cycle detected through shortcut-a -> shortcut-b.",
+  ],
+}
+`;

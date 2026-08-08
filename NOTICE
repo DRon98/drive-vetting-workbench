@@ -1,0 +1,21 @@
+Drive Vetting Workbench
+Copyright 2026 Drive Vetting Workbench contributors
+
+This product includes software developed by Drive Vetting Workbench
+contributors and is licensed under the Apache License, Version 2.0.
+
+Independent design acknowledgements:
+
+- codebase-memory-mcp by DeusData informed the use of staged, local relationship
+  indexing and compact structural queries.
+  https://github.com/DeusData/codebase-memory-mcp
+- pi-rlm by Manoj L. D. S. informed the bounded coordinator, analyst-branch,
+  synthesizer, budget, cancellation, and event-log design.
+  https://github.com/manojlds/pi-rlm
+
+No source code from either acknowledged project is included or required at
+runtime. Their names identify conceptual research references only.
+
+Third-party packages are not bundled in the source archive. Their licenses are
+reported by `pnpm licenses list --json` and reviewed in
+docs/dependency-licenses.md.

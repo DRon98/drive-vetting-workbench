@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@dvw/evidence-store-sqlite": [
+        "../../packages/evidence-store-sqlite/src/index.ts"
+      ],
+      "@dvw/query-service": ["../../packages/query-service/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

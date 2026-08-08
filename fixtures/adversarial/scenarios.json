@@ -1,0 +1,148 @@
+{
+  "version": "dvw.adversarial.v1",
+  "fixtureData": "synthetic-only",
+  "network": "forbidden",
+  "providerMutations": ["rename", "createShortcut"],
+  "cases": [
+    {
+      "id": "messy-folder-tree",
+      "expected": "All reachable items are indexed with stable IDs and relationships.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "same-size-different-content",
+      "expected": "Equal byte size alone does not create a duplicate candidate.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "true-duplicate",
+      "expected": "Matching content fingerprints produce an explicit duplicate candidate.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "later-api-page",
+      "expected": "The final-page item and its denial gap are reported.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "shortcut-cycle",
+      "expected": "The cycle is reported and scanning completes without recursion escape.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "protected-data-room",
+      "expected": "Protected material is review-required and never becomes an automatic write.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "frozen-archive",
+      "expected": "Archive hierarchy is preserved with a non-write action.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "wrong-entity-alias",
+      "expected": "An unknown alias fails closed as review-required.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "cross-deal-reference",
+      "expected": "A reference from another deal remains explicit evidence and cannot be auto-filed.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "missing-permission",
+      "expected": "Permission loss is a coverage gap, never empty evidence.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "communications-path-contradiction",
+      "expected": "The two configured destinations produce one material human question.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "bookkeeping-handoff",
+      "expected": "A dated batch shortcut is allowed without moving the original.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "invalid-model-output",
+      "expected": "A mutation-shaped model response fails schema validation and performs no write.",
+      "testRef": "tests/e2e/adversarial-scan-policy.test.ts"
+    },
+    {
+      "id": "stale-after-approval",
+      "expected": "Whole-plan preflight blocks all writes after live state changes.",
+      "testRef": "tests/e2e/adversarial-execution.test.ts"
+    },
+    {
+      "id": "partial-failure",
+      "expected": "The run stops after the injected second write failure and retains verified progress.",
+      "testRef": "tests/e2e/adversarial-execution.test.ts"
+    },
+    {
+      "id": "resume",
+      "expected": "Resume verifies prior work and executes only the remaining approved action.",
+      "testRef": "tests/e2e/adversarial-execution.test.ts"
+    },
+    {
+      "id": "apply-twice",
+      "expected": "A later apply is a verified zero-write no-op with no duplicate shortcut.",
+      "testRef": "tests/e2e/adversarial-execution.test.ts"
+    },
+    {
+      "id": "human-drive-lab-loop",
+      "expected": "Edit, scan, plan, HTML, feedback, replan, approval, dry-run, apply, and verify complete locally.",
+      "testRef": "tests/e2e/human-loop.test.ts"
+    },
+    {
+      "id": "malicious-html",
+      "expected": "Hostile markup remains inert text under the offline CSP.",
+      "testRef": "tests/browser/feedback/feedback.spec.ts"
+    },
+    {
+      "id": "stale-feedback",
+      "expected": "A packet for another plan or round is rejected.",
+      "testRef": "tests/browser/feedback/feedback.spec.ts"
+    },
+    {
+      "id": "unknown-action",
+      "expected": "An unknown action ID is rejected with no approval or write.",
+      "testRef": "tests/browser/feedback/feedback.spec.ts"
+    },
+    {
+      "id": "invalid-feedback-checksum",
+      "expected": "A changed packet checksum is rejected.",
+      "testRef": "tests/browser/feedback/feedback.spec.ts"
+    },
+    {
+      "id": "clipboard-fallback",
+      "expected": "Copy fallback preserves the exact packet bytes.",
+      "testRef": "tests/browser/feedback/feedback.spec.ts"
+    },
+    {
+      "id": "offline-render",
+      "expected": "The file artifact makes zero network requests.",
+      "testRef": "tests/browser/review/review.spec.ts"
+    },
+    {
+      "id": "keyboard-review",
+      "expected": "Every review control and visual node is reachable by keyboard.",
+      "testRef": "tests/browser/review/review.spec.ts"
+    },
+    {
+      "id": "mobile-review",
+      "expected": "The review remains usable at the mobile viewport.",
+      "testRef": "tests/browser/review/review.spec.ts"
+    },
+    {
+      "id": "print-review",
+      "expected": "The print layout preserves the review evidence and hides controls appropriately.",
+      "testRef": "tests/browser/review/review.spec.ts"
+    },
+    {
+      "id": "reduced-motion",
+      "expected": "Reduced-motion mode disables nonessential animation.",
+      "testRef": "tests/browser/review/review.spec.ts"
+    }
+  ]
+}

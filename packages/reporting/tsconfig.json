@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false
+  },
+  "include": ["src/**/*.ts", "vitest.config.ts"]
+}

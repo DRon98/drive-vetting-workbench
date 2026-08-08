@@ -1,0 +1,20 @@
+{
+  "name": "@dvw/review-preview",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dvw/change-planner": "workspace:*",
+    "@dvw/cli": "workspace:*",
+    "@dvw/core": "workspace:*",
+    "@dvw/drive-simulator": "workspace:*",
+    "@dvw/evidence-builder": "workspace:*",
+    "@dvw/feedback": "workspace:*",
+    "@dvw/review-artifact": "workspace:*"
+  }
+}

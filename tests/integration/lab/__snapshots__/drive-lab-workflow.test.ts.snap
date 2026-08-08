@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`human-operated Drive Lab workflow > initializes, scans, replans after edit, applies shared writes, diffs, and resets > initial and changed lab trees 1`] = `
+{
+  "changed": "Drive Lab messy-paisano · snapshot 6140ed049176
+5 nodes in the current lab tree.
+- Messy Paisano (id_c375ef3d2072)
+  - Board Memo.pdf (id_2fc5edd4a7fd)
+  - Communications (id_0684355dcc25)
+    - Board Memo shortcut (id_398db5017089) -> id_2fc5edd4a7fd
+  - Operator changed invoice.pdf (id_d9b39acf0dbe)",
+  "initial": "Drive Lab messy-paisano · snapshot 50c918e393ab
+5 nodes in the current lab tree.
+- Messy Paisano (id_c375ef3d2072)
+  - Board Memo.pdf (id_2fc5edd4a7fd)
+  - Communications (id_0684355dcc25)
+    - Board Memo shortcut (id_398db5017089) -> id_2fc5edd4a7fd
+  - Hotel Paisano Invoice draft FINAL.pdf (id_d9b39acf0dbe)",
+}
+`;
+
+exports[`human-operated Drive Lab workflow > initializes, scans, replans after edit, applies shared writes, diffs, and resets > planner output after lab edit 1`] = `
+{
+  "command": "plan",
+  "data": {
+    "actionCount": 1,
+    "actions": [
+      {
+        "actionId": "act_db9fbda6bb44c6fa16c9c21fee8be6a6",
+        "reviewState": "Pending",
+        "targetId": "messy-invoice-draft",
+        "type": "RENAME",
+      },
+    ],
+    "approvalEligible": true,
+    "blockers": [],
+    "effectiveActionCount": 1,
+    "planHash": "3813bb279570996b81c4f6499989622e33d81bf6a3d1ecd5a83e51684e4eb173",
+    "questionCount": 0,
+  },
+  "policyVersion": "1.0.0",
+  "scanGeneration": "scan-lab-2",
+  "status": "SUCCESS",
+}
+`;
+
+exports[`human-operated Drive Lab workflow > initializes, scans, replans after edit, applies shared writes, diffs, and resets > verified shared-provider apply receipt 1`] = `
+{
+  "actionCount": 2,
+  "after": {
+    "contentFingerprint": "sha256:27d7f6d47b9f3bb7d16b5c2aaf85162058dbf103a62c5c35e53a313394b74d1c",
+    "createdTime": "2026-08-08T12:00:00.000Z",
+    "id": "messy-invoice-draft",
+    "mimeType": "application/pdf",
+    "modifiedTime": "2026-08-08T12:00:02.000Z",
+    "name": "2026-08-01 — Hotel Paisano — Invoice.pdf",
+    "parentIds": [
+      "messy-root",
+    ],
+    "permissions": {
+      "canRead": true,
+      "canWrite": true,
+    },
+    "scanGeneration": "lab:messy-paisano:3",
+    "shortcutTargetId": null,
+    "trashed": false,
+  },
+  "renameVerified": true,
+  "shortcutVerified": true,
+  "writeCount": 2,
+}
+`;

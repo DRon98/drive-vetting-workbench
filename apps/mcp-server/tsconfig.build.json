@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "outDir": "dist",
+    "paths": {
+      "@dvw/evidence-store-sqlite": [
+        "../../packages/evidence-store-sqlite/dist/index.d.ts"
+      ],
+      "@dvw/query-service": ["../../packages/query-service/dist/index.d.ts"]
+    },
+    "rootDir": "src"
+  }
+}

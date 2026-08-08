@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "outDir": "dist",
+    "paths": {
+      "@dvw/content-extractor": ["../content-extractor/dist/index.d.ts"],
+      "@dvw/core": ["../core/dist/index.d.ts"],
+      "@dvw/evidence-store-sqlite": [
+        "../evidence-store-sqlite/dist/index.d.ts"
+      ],
+      "@dvw/security": ["../security/dist/index.d.ts"]
+    },
+    "rootDir": "src"
+  }
+}

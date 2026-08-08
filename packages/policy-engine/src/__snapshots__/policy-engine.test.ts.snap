@@ -1,0 +1,124 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Paisano policy pack > turns the two communications destinations into one material question 1`] = `
+[
+  {
+    "choices": [
+      "---/communications/",
+      "---/Logged/Communications/",
+    ],
+    "key": "communications.canonical-destination",
+    "material": true,
+    "policyLocators": [
+      "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.DIRECT_OPTION",
+      "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.LOGGED_OPTION",
+    ],
+    "prompt": "Which folder is the canonical destination for communications?",
+    "reasonCode": "PAISANO.COMMUNICATIONS.PATH_DECISION_REQUIRED",
+    "scope": {
+      "id": null,
+      "type": "global",
+    },
+  },
+]
+`;
+
+exports[`entity aliases > fails closed for a wrong alias instead of inventing an entity 1`] = `
+{
+  "canonicalEntityId": null,
+  "matchedRule": null,
+  "reasonCode": "PAISANO.ENTITY.UNKNOWN_ALIAS",
+  "status": "NEEDS_REVIEW",
+}
+`;
+
+exports[`entity aliases > resolves only an exact configured alias 1`] = `
+{
+  "canonicalEntityId": "hotel-paisano",
+  "matchedRule": {
+    "policyLocator": "paisano:1.0.0/entities.json#The%20Paisano",
+    "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+  },
+  "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+  "status": "MATCHED",
+}
+`;
+
+exports[`protected and archive policy > makes protected item matches explicit and review-required 1`] = `
+{
+  "actionType": "NEEDS_REVIEW",
+  "itemId": "file-protected-1",
+  "matchedRules": [
+    {
+      "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Adata-room",
+      "reasonCode": "PAISANO.PROTECTED.DATA_ROOM",
+    },
+    {
+      "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Asigned-document",
+      "reasonCode": "PAISANO.PROTECTED.SIGNED_DOCUMENT",
+    },
+  ],
+  "reasonCode": "PAISANO.PROTECTED.DATA_ROOM",
+}
+`;
+
+exports[`protected and archive policy > preserves a frozen archive and its identity-bearing hierarchy 1`] = `
+{
+  "actionType": "PRESERVE_ARCHIVE",
+  "itemId": "folder-archive-1",
+  "matchedRules": [
+    {
+      "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Afrozen-archive",
+      "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+    },
+    {
+      "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Aconfigured-archive",
+      "reasonCode": "PAISANO.ARCHIVE.CONFIGURED",
+    },
+    {
+      "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adeal",
+      "reasonCode": "PAISANO.ARCHIVE.DEAL_IDENTITY",
+    },
+    {
+      "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Asender",
+      "reasonCode": "PAISANO.ARCHIVE.SENDER_IDENTITY",
+    },
+    {
+      "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adate",
+      "reasonCode": "PAISANO.ARCHIVE.DATE_IDENTITY",
+    },
+  ],
+  "preserveHierarchy": true,
+  "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+}
+`;
+
+exports[`shortcut policy > allows distinct dated Bookkeeping Handoff shortcuts 1`] = `
+{
+  "actionType": "CREATE_SHORTCUT",
+  "allowed": true,
+  "matchedRules": [
+    {
+      "policyLocator": "paisano:1.0.0/shortcut-rules.json#exceptions%2Fbookkeeping-handoff-dated-batches",
+      "reasonCode": "PAISANO.SHORTCUT.BOOKKEEPING_DATED_BATCH",
+    },
+  ],
+  "reasonCode": "PAISANO.SHORTCUT.BOOKKEEPING_DATED_BATCH",
+  "sourceId": "file-source-2",
+}
+`;
+
+exports[`shortcut policy > blocks a second normal organizational shortcut 1`] = `
+{
+  "actionType": "NEEDS_REVIEW",
+  "allowed": false,
+  "matchedRules": [
+    {
+      "policyLocator": "paisano:1.0.0/shortcut-rules.json#default",
+      "reasonCode": "PAISANO.SHORTCUT.DEFAULT_LIMIT",
+    },
+  ],
+  "reasonCode": "PAISANO.SHORTCUT.DEFAULT_LIMIT_REACHED",
+  "sourceId": "file-source-1",
+}
+`;

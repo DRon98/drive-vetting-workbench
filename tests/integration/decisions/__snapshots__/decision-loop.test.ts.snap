@@ -1,0 +1,133 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Paisano question and decision round trip > asks once, isolates scope, invalidates policy, and preserves supersession history > lossless scoped decision loop 1`] = `
+{
+  "active": {
+    "answer": "---/Logged/Communications/",
+    "approver": "buck",
+    "createdTime": "2026-08-08T14:05:00.000Z",
+    "decisionId": "dec_00f53288e041b45077f62e190264314081f678d11fb6cafba25b0b3e3b50e12b",
+    "evidenceIds": [
+      "fact-communications-v2",
+    ],
+    "policyVersion": "2.0.0",
+    "provenance": "HumanDecision",
+    "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+    "scope": {
+      "id": null,
+      "type": "global",
+    },
+    "supersedesDecisionId": "dec_b68d24e80445a8cc31e8e13cb17caac68c43cc898dce37f687c9f5c42991b8ec",
+  },
+  "before": {
+    "decision": null,
+    "reason": "NO_ACTIVE_DECISION",
+    "shouldAsk": true,
+    "status": "UNRESOLVED",
+  },
+  "history": [
+    {
+      "answer": "---/communications/",
+      "approver": "buck",
+      "createdTime": "2026-08-08T14:00:00.000Z",
+      "decisionId": "dec_b68d24e80445a8cc31e8e13cb17caac68c43cc898dce37f687c9f5c42991b8ec",
+      "evidenceIds": [
+        "fact-communications-alpha",
+      ],
+      "policyVersion": "1.0.0",
+      "provenance": "HumanDecision",
+      "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+      "scope": {
+        "id": null,
+        "type": "global",
+      },
+      "supersedesDecisionId": null,
+    },
+    {
+      "answer": "---/Logged/Communications/",
+      "approver": "buck",
+      "createdTime": "2026-08-08T14:05:00.000Z",
+      "decisionId": "dec_00f53288e041b45077f62e190264314081f678d11fb6cafba25b0b3e3b50e12b",
+      "evidenceIds": [
+        "fact-communications-v2",
+      ],
+      "policyVersion": "2.0.0",
+      "provenance": "HumanDecision",
+      "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+      "scope": {
+        "id": null,
+        "type": "global",
+      },
+      "supersedesDecisionId": "dec_b68d24e80445a8cc31e8e13cb17caac68c43cc898dce37f687c9f5c42991b8ec",
+    },
+  ],
+  "invalidated": {
+    "conflict": null,
+    "decision": {
+      "answer": "---/communications/",
+      "approver": "buck",
+      "createdTime": "2026-08-08T14:00:00.000Z",
+      "decisionId": "dec_b68d24e80445a8cc31e8e13cb17caac68c43cc898dce37f687c9f5c42991b8ec",
+      "evidenceIds": [
+        "fact-communications-alpha",
+      ],
+      "policyVersion": "1.0.0",
+      "provenance": "HumanDecision",
+      "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+      "scope": {
+        "id": null,
+        "type": "global",
+      },
+      "supersedesDecisionId": null,
+    },
+    "reason": "POLICY_VERSION_CHANGED",
+    "shouldAsk": true,
+    "status": "NEEDS_REVIEW",
+  },
+  "question": {
+    "choices": [
+      "---/communications/",
+      "---/Logged/Communications/",
+    ],
+    "evidenceIds": [
+      "fact-communications-alpha",
+    ],
+    "issueType": "communications.canonical-destination",
+    "material": true,
+    "policyLocators": [
+      "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.DIRECT_OPTION",
+      "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.LOGGED_OPTION",
+    ],
+    "policyVersion": "1.0.0",
+    "prompt": "Which folder is the canonical destination for communications?",
+    "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+    "relevantEntityIds": [],
+    "scope": {
+      "id": null,
+      "type": "global",
+    },
+  },
+  "reused": {
+    "decision": {
+      "answer": "---/communications/",
+      "approver": "buck",
+      "createdTime": "2026-08-08T14:00:00.000Z",
+      "decisionId": "dec_b68d24e80445a8cc31e8e13cb17caac68c43cc898dce37f687c9f5c42991b8ec",
+      "evidenceIds": [
+        "fact-communications-alpha",
+      ],
+      "policyVersion": "1.0.0",
+      "provenance": "HumanDecision",
+      "questionKey": "dq_5d01e0868e1a5178523d877be8490823012a8415f51071466edab0d501bf1c6f",
+      "scope": {
+        "id": null,
+        "type": "global",
+      },
+      "supersedesDecisionId": null,
+    },
+    "reason": "ACTIVE_COMPATIBLE_DECISION",
+    "shouldAsk": false,
+    "status": "RESOLVED",
+  },
+}
+`;

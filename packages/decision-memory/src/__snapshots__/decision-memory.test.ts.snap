@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deterministic material questions > normalizes ordering and keeps the key stable across policy versions > communications question 1`] = `
+{
+  "choices": [
+    "---/communications/",
+    "---/Logged/Communications/",
+  ],
+  "evidenceIds": [
+    "fact-path-conflict",
+  ],
+  "issueType": "communications.canonical-destination",
+  "material": true,
+  "policyLocators": [
+    "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.DIRECT_OPTION",
+    "paisano:1.0.0/naming.json#PAISANO.COMMUNICATIONS.LOGGED_OPTION",
+  ],
+  "policyVersion": "1.0.0",
+  "prompt": "Which folder is the canonical destination for communications?",
+  "questionKey": "dq_307920560bc6982b786304380b1e6b2e99f77848b6887c7ba6cb03dad38304dd",
+  "relevantEntityIds": [
+    "hotel-paisano",
+  ],
+  "scope": {
+    "id": null,
+    "type": "global",
+  },
+}
+`;

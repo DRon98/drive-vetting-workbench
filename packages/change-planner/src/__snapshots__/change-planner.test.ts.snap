@@ -1,0 +1,119 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deterministic change planning > produces the same canonical actions and hash regardless of input order > canonical deterministic plan 1`] = `
+{
+  "actions": [
+    {
+      "actionId": "act_3d92f241e6992aaf45b3a2d1f71de974",
+      "confidence": 0.93,
+      "desiredState": {
+        "name": "Board memo.pdf",
+        "parentIds": [
+          "root",
+        ],
+      },
+      "evidenceIds": [
+        "fact-file-2-name",
+      ],
+      "policyVersion": "1.0.0",
+      "preconditions": {
+        "modifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "Board memo.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true,
+        },
+        "shortcutTargetId": null,
+        "trashed": false,
+      },
+      "reasonCode": "PAISANO.NAME.ALREADY_COMPLIANT",
+      "reviewState": "Pending",
+      "scanGeneration": "scan-1",
+      "targetId": "file-2",
+      "type": "KEEP",
+    },
+    {
+      "actionId": "act_969c31c7d694c87d69bce3196b9929f2",
+      "confidence": 0.93,
+      "desiredState": {
+        "name": "2026-08-08 — Hotel Paisano — Invoice.pdf",
+      },
+      "evidenceIds": [
+        "fact-file-1-name",
+      ],
+      "policyVersion": "1.0.0",
+      "preconditions": {
+        "modifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "Draft invoice.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true,
+        },
+        "shortcutTargetId": null,
+        "trashed": false,
+      },
+      "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      "reviewState": "Pending",
+      "scanGeneration": "scan-1",
+      "targetId": "file-1",
+      "type": "RENAME",
+    },
+  ],
+  "approvalEligible": true,
+  "blockers": [],
+  "canonicalJson": "{"actions":[{"actionId":"act_3d92f241e6992aaf45b3a2d1f71de974","desiredState":{"name":"Board memo.pdf","parentIds":["root"]},"evidenceIds":["fact-file-2-name"],"policyVersion":"1.0.0","preconditions":{"modifiedTime":"2026-08-08T12:00:00.000Z","name":"Board memo.pdf","parentIds":["root"],"permissions":{"canRead":true,"canWrite":true},"shortcutTargetId":null,"trashed":false},"reasonCode":"PAISANO.NAME.ALREADY_COMPLIANT","scanGeneration":"scan-1","targetId":"file-2","type":"KEEP"},{"actionId":"act_969c31c7d694c87d69bce3196b9929f2","desiredState":{"name":"2026-08-08 — Hotel Paisano — Invoice.pdf"},"evidenceIds":["fact-file-1-name"],"policyVersion":"1.0.0","preconditions":{"modifiedTime":"2026-08-08T12:00:00.000Z","name":"Draft invoice.pdf","parentIds":["root"],"permissions":{"canRead":true,"canWrite":true},"shortcutTargetId":null,"trashed":false},"reasonCode":"PAISANO.NAME.DEAL_DOCUMENT","scanGeneration":"scan-1","targetId":"file-1","type":"RENAME"}],"policyVersion":"1.0.0","scanGeneration":"scan-1","schemaVersion":"dvw.change-plan.v1"}",
+  "effectiveActions": [
+    {
+      "actionId": "act_969c31c7d694c87d69bce3196b9929f2",
+      "confidence": 0.93,
+      "desiredState": {
+        "name": "2026-08-08 — Hotel Paisano — Invoice.pdf",
+      },
+      "evidenceIds": [
+        "fact-file-1-name",
+      ],
+      "policyVersion": "1.0.0",
+      "preconditions": {
+        "modifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "Draft invoice.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true,
+        },
+        "shortcutTargetId": null,
+        "trashed": false,
+      },
+      "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      "reviewState": "Pending",
+      "scanGeneration": "scan-1",
+      "targetId": "file-1",
+      "type": "RENAME",
+    },
+  ],
+  "explanations": [
+    {
+      "actionId": "act_3d92f241e6992aaf45b3a2d1f71de974",
+      "summary": "Keep file-2. No write is needed because the observed state already satisfies PAISANO.NAME.ALREADY_COMPLIANT.",
+      "writeRequired": false,
+    },
+    {
+      "actionId": "act_969c31c7d694c87d69bce3196b9929f2",
+      "summary": "Rename file-1 to 2026-08-08 — Hotel Paisano — Invoice.pdf because PAISANO.NAME.DEAL_DOCUMENT.",
+      "writeRequired": true,
+    },
+  ],
+  "hashContract": "dvw.change-plan.v1",
+  "planHash": "288f2a4c79df81475271db99a39378ebf66a158f707909f369e51c45760fd053",
+  "policyVersion": "1.0.0",
+  "scanGeneration": "scan-1",
+}
+`;

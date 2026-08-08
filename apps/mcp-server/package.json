@@ -1,0 +1,26 @@
+{
+  "name": "@dvw/mcp-server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "dvw-mcp": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dvw/evidence-store-sqlite": "workspace:*",
+    "@dvw/query-service": "workspace:*",
+    "@modelcontextprotocol/server": "2.0.0",
+    "zod": "^4.2.0"
+  }
+}

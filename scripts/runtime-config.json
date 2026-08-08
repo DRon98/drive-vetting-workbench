@@ -1,0 +1,5 @@
+{
+  "nodeMajor": 24,
+  "sqliteDriver": "node:sqlite",
+  "nativeBuildRequired": false
+}

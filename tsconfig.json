@@ -1,0 +1,31 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@dvw/mcp-server": ["apps/mcp-server/src/index.ts"],
+      "@dvw/change-planner": ["packages/change-planner/src/index.ts"],
+      "@dvw/cli": ["apps/cli/src/index.ts"],
+      "@dvw/content-extractor": ["packages/content-extractor/src/index.ts"],
+      "@dvw/core": ["packages/core/src/index.ts"],
+      "@dvw/decision-memory": ["packages/decision-memory/src/index.ts"],
+      "@dvw/drive-simulator": ["packages/drive-simulator/src/index.ts"],
+      "@dvw/drive-provider": ["packages/drive-provider/src/index.ts"],
+      "@dvw/evidence-builder": ["packages/evidence-builder/src/index.ts"],
+      "@dvw/evidence-store-sqlite": [
+        "packages/evidence-store-sqlite/src/index.ts"
+      ],
+      "@dvw/execution": ["packages/execution/src/index.ts"],
+      "@dvw/feedback": ["packages/feedback/src/index.ts"],
+      "@dvw/policy-engine": ["packages/policy-engine/src/index.ts"],
+      "@dvw/query-service": ["packages/query-service/src/index.ts"],
+      "@dvw/reasoning": ["packages/reasoning/src/index.ts"],
+      "@dvw/reporting": ["packages/reporting/src/index.ts"],
+      "@dvw/review-artifact": ["packages/review-artifact/src/index.ts"],
+      "@dvw/scanner": ["packages/scanner/src/index.ts"],
+      "@dvw/security": ["packages/security/src/index.ts"]
+    }
+  },
+  "include": ["scripts/**/*.ts", "tests/**/*.ts", "vitest.*.ts"]
+}

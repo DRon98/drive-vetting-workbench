@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Google Drive provider offline contract > maps paginated Shared Drive children, shortcuts, checksums, and capabilities > redacted Shared Drive list request 1`] = `
+{
+  "corpora": "drive",
+  "driveIdSha256": "430a0bddc62cac5bbacdf0f8274d9703a19c1082320102db2b07d201c3471d4d",
+  "hasPageToken": true,
+  "includeItemsFromAllDrives": true,
+  "method": "files.list",
+  "pageSize": 2,
+  "parentQuerySha256": "778088de959952081308aa236c453751a0f6d0d516d4d6498d8aa7147fab1125",
+  "supportsAllDrives": true,
+}
+`;

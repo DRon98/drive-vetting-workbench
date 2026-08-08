@@ -1,0 +1,124 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deterministic approved executor > preflights the whole plan, re-fetches stable IDs, and calls only ordered approved mutations 1`] = `
+{
+  "acceptedMutationCount": 2,
+  "approvalChecksum": "a5073996dcb288fe013f5993e990ac9e216e28918f421e92acc6193f5833606f",
+  "checkedAt": "2026-08-08T17:30:00.000Z",
+  "mutationCallCount": 2,
+  "planHash": "372c76d28cb51aa4aef4c28a644caeb95067679f34e8365bd212cc7b2a523420",
+  "preflight": {
+    "approvalChecksum": "a5073996dcb288fe013f5993e990ac9e216e28918f421e92acc6193f5833606f",
+    "checkedAt": "2026-08-08T17:30:00.000Z",
+    "issues": [],
+    "operations": [
+      {
+        "actionId": "act_b4d0e2985a332a4bfa4fda7429357510",
+        "disposition": "Write",
+        "reason": "Rename invoice-1 to 2026-08-01 - Hotel Paisano - Invoice.pdf because PAISANO.NAME.DEAL_DOCUMENT.",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+        "request": {
+          "expectedModifiedTime": "2026-08-08T12:00:00.000Z",
+          "name": "2026-08-01 - Hotel Paisano - Invoice.pdf",
+          "targetId": "invoice-1",
+        },
+        "targetId": "invoice-1",
+        "type": "RENAME",
+      },
+      {
+        "actionId": "act_d0f0bf93910e2613881325092211613a",
+        "disposition": "Write",
+        "reason": "Create a shortcut for contract-1 in organized because PAISANO.SHORTCUT.DEAL_DOCUMENT.",
+        "reasonCode": "PAISANO.SHORTCUT.DEAL_DOCUMENT",
+        "request": {
+          "name": "2026 - Hotel Paisano - Contract",
+          "parentId": "organized",
+          "targetId": "contract-1",
+        },
+        "targetId": "contract-1",
+        "type": "CREATE_SHORTCUT",
+      },
+    ],
+    "planHash": "372c76d28cb51aa4aef4c28a644caeb95067679f34e8365bd212cc7b2a523420",
+    "status": "Ready",
+  },
+  "results": [
+    {
+      "actionId": "act_b4d0e2985a332a4bfa4fda7429357510",
+      "before": {
+        "modifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "Invoice draft.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true,
+        },
+        "shortcutTargetId": null,
+        "trashed": false,
+      },
+      "disposition": "MutationAccepted",
+      "failure": null,
+      "mutationCalled": true,
+      "providerResponse": {
+        "id": "invoice-1",
+        "modifiedTime": "2026-08-08T17:31:00.000Z",
+        "name": "2026-08-01 - Hotel Paisano - Invoice.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "shortcutTargetId": null,
+      },
+      "reason": "Rename invoice-1 to 2026-08-01 - Hotel Paisano - Invoice.pdf because PAISANO.NAME.DEAL_DOCUMENT.",
+      "request": {
+        "expectedModifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "2026-08-01 - Hotel Paisano - Invoice.pdf",
+        "targetId": "invoice-1",
+      },
+      "targetId": "invoice-1",
+      "type": "RENAME",
+      "verification": "Pending",
+    },
+    {
+      "actionId": "act_d0f0bf93910e2613881325092211613a",
+      "before": {
+        "modifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "Hotel Paisano Contract.pdf",
+        "parentIds": [
+          "root",
+        ],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true,
+        },
+        "shortcutTargetId": null,
+        "trashed": false,
+      },
+      "disposition": "MutationAccepted",
+      "failure": null,
+      "mutationCalled": true,
+      "providerResponse": {
+        "id": "fake-shortcut-000001",
+        "modifiedTime": "2026-08-08T17:31:00.000Z",
+        "name": "2026 - Hotel Paisano - Contract",
+        "parentIds": [
+          "organized",
+        ],
+        "shortcutTargetId": "contract-1",
+      },
+      "reason": "Create a shortcut for contract-1 in organized because PAISANO.SHORTCUT.DEAL_DOCUMENT.",
+      "request": {
+        "name": "2026 - Hotel Paisano - Contract",
+        "parentId": "organized",
+        "targetId": "contract-1",
+      },
+      "targetId": "contract-1",
+      "type": "CREATE_SHORTCUT",
+      "verification": "Pending",
+    },
+  ],
+  "state": "PendingVerification",
+  "stoppedAtActionId": null,
+}
+`;

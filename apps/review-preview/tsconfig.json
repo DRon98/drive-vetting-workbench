@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@dvw/change-planner": ["../../packages/change-planner/src/index.ts"],
+      "@dvw/cli": ["../cli/src/index.ts"],
+      "@dvw/core": ["../../packages/core/src/index.ts"],
+      "@dvw/drive-simulator": ["../../packages/drive-simulator/src/index.ts"],
+      "@dvw/evidence-builder": ["../../packages/evidence-builder/src/index.ts"],
+      "@dvw/feedback": ["../../packages/feedback/src/index.ts"],
+      "@dvw/review-artifact": ["../../packages/review-artifact/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "vitest.config.ts"]
+}

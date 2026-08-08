@@ -1,0 +1,12 @@
+{
+  "exceptions": [
+    {
+      "id": "bookkeeping-handoff-dated-batches",
+      "maxPerSource": null,
+      "mode": "DATED_BATCH",
+      "reasonCode": "PAISANO.SHORTCUT.BOOKKEEPING_DATED_BATCH",
+      "selector": "folder-name:Bookkeeping Handoff"
+    }
+  ],
+  "maxPerSource": 1
+}

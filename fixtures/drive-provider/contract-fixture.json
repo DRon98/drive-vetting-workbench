@@ -1,0 +1,92 @@
+{
+  "rootIds": ["root"],
+  "items": [
+    {
+      "item": {
+        "contentFingerprint": "sha256:document-one",
+        "createdTime": "2026-01-01T00:00:00.000Z",
+        "id": "document-one",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2026-01-02T00:00:00.000Z",
+        "name": "Document One",
+        "parentIds": ["root"],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true
+        },
+        "scanGeneration": "scan-fixture",
+        "shortcutTargetId": null,
+        "trashed": false
+      },
+      "nativeExports": [
+        {
+          "mimeType": "text/plain",
+          "text": "Synthetic document one"
+        }
+      ],
+      "sharedDriveId": null
+    },
+    {
+      "item": {
+        "contentFingerprint": null,
+        "createdTime": "2026-01-01T00:00:00.000Z",
+        "id": "permission-denied",
+        "mimeType": "application/vnd.google-apps.document",
+        "modifiedTime": "2026-01-02T00:00:00.000Z",
+        "name": "Permission Gap",
+        "parentIds": ["root"],
+        "permissions": {
+          "canRead": false,
+          "canWrite": false,
+          "deniedReason": "Synthetic access denial"
+        },
+        "scanGeneration": "scan-fixture",
+        "shortcutTargetId": null,
+        "trashed": false
+      },
+      "nativeExports": [],
+      "readDenied": true,
+      "sharedDriveId": null
+    },
+    {
+      "item": {
+        "contentFingerprint": null,
+        "createdTime": "2026-01-01T00:00:00.000Z",
+        "id": "shortcut-a",
+        "mimeType": "application/vnd.google-apps.shortcut",
+        "modifiedTime": "2026-01-02T00:00:00.000Z",
+        "name": "Shortcut A",
+        "parentIds": ["root"],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true
+        },
+        "scanGeneration": "scan-fixture",
+        "shortcutTargetId": "shortcut-b",
+        "trashed": false
+      },
+      "nativeExports": [],
+      "sharedDriveId": "shared-drive-1"
+    },
+    {
+      "item": {
+        "contentFingerprint": null,
+        "createdTime": "2026-01-01T00:00:00.000Z",
+        "id": "shortcut-b",
+        "mimeType": "application/vnd.google-apps.shortcut",
+        "modifiedTime": "2026-01-02T00:00:00.000Z",
+        "name": "Shortcut B",
+        "parentIds": ["root"],
+        "permissions": {
+          "canRead": true,
+          "canWrite": true
+        },
+        "scanGeneration": "scan-fixture",
+        "shortcutTargetId": "shortcut-a",
+        "trashed": true
+      },
+      "nativeExports": [],
+      "sharedDriveId": "shared-drive-1"
+    }
+  ]
+}

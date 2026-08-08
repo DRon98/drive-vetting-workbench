@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "paths": {
+      "@dvw/change-planner": ["../change-planner/src/index.ts"],
+      "@dvw/core": ["../core/src/index.ts"],
+      "@dvw/security": ["../security/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "vitest.config.ts"]
+}

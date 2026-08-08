@@ -1,0 +1,30 @@
+{
+  "name": "@dvw/cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@dvw/change-planner": "workspace:*",
+    "@dvw/core": "workspace:*",
+    "@dvw/decision-memory": "workspace:*",
+    "@dvw/drive-simulator": "workspace:*",
+    "@dvw/evidence-store-sqlite": "workspace:*",
+    "@dvw/execution": "workspace:*",
+    "@dvw/feedback": "workspace:*",
+    "@dvw/query-service": "workspace:*",
+    "@dvw/reporting": "workspace:*",
+    "@dvw/review-artifact": "workspace:*",
+    "@dvw/scanner": "workspace:*",
+    "zod": "^4.0.0"
+  }
+}

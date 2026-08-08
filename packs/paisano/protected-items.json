@@ -1,0 +1,15 @@
+[
+  { "reasonCode": "PAISANO.PROTECTED.DATA_ROOM", "selector": "flag:data-room" },
+  {
+    "reasonCode": "PAISANO.PROTECTED.LEGAL_ORIGINAL",
+    "selector": "flag:legal-original"
+  },
+  {
+    "reasonCode": "PAISANO.PROTECTED.SIGNED_DOCUMENT",
+    "selector": "flag:signed-document"
+  },
+  {
+    "reasonCode": "PAISANO.PROTECTED.CONFIGURED_ARCHIVE",
+    "selector": "flag:configured-archive"
+  }
+]

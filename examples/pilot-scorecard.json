@@ -1,0 +1,198 @@
+{
+  "artifacts": {
+    "feedbackPacketPath": "artifacts/local/pilot/feedback-round-1.json",
+    "reviewArtifactPath": "artifacts/local/pilot/review-round-2.html",
+    "transcript": [
+      "Changed one synthetic Drive Lab item.",
+      "Scanned four items over two pages.",
+      "Built the offline round-one review HTML.",
+      "Exported and imported the feedback packet without loss.",
+      "Built the offline round-two review HTML with zero network requests.",
+      "Dry-run produced one ordered operation and zero writes.",
+      "Applied and verified one write.",
+      "Repeated apply with zero writes."
+    ]
+  },
+  "expansion": {
+    "allowed": true,
+    "blockedAtGate": null,
+    "nextCorrectiveAction": null
+  },
+  "gates": [
+    {
+      "evidence": "Synthetic rehearsal passed gate 1; real access remains gated.",
+      "gateId": "FIXTURE",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 2; real access remains gated.",
+      "gateId": "DRIVE_LAB",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 3; real access remains gated.",
+      "gateId": "READ_ONLY",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 4; real access remains gated.",
+      "gateId": "DECISION",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 5; real access remains gated.",
+      "gateId": "REVIEW",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 6; real access remains gated.",
+      "gateId": "CANARY",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 7; real access remains gated.",
+      "gateId": "FOLDER",
+      "status": "PASSED"
+    },
+    {
+      "evidence": "Synthetic rehearsal passed gate 8; real access remains gated.",
+      "gateId": "EXPANSION",
+      "status": "PASSED"
+    }
+  ],
+  "learningTargets": [
+    {
+      "actual": 75,
+      "kind": "LEARNING_TARGET",
+      "measure": "CLASSIFIED_WITHOUT_QUESTION",
+      "target": "At least 70% after the first calibration folder"
+    },
+    {
+      "actual": 100,
+      "kind": "LEARNING_TARGET",
+      "measure": "PROPOSALS_ACCEPTED_UNCHANGED",
+      "target": "At least 80% before expansion"
+    },
+    {
+      "actual": 66.67,
+      "kind": "LEARNING_TARGET",
+      "measure": "DIRECT_EFFORT_REDUCTION",
+      "target": "Measure 50% to 70% after calibration"
+    },
+    {
+      "actual": 100,
+      "kind": "LEARNING_TARGET",
+      "measure": "MECHANICAL_WORK_AUTOMATED",
+      "target": "Measure 80% to 95% against approved actions"
+    }
+  ],
+  "metrics": {
+    "blockedActionCount": 0,
+    "coverage": {
+      "complete": true,
+      "enumeratedVisibleItemCount": 4,
+      "expectedVisibleItemCount": 4,
+      "gapCount": 0,
+      "namedGapCount": 0,
+      "pageCount": 2,
+      "percent": 100,
+      "safetyPassed": true
+    },
+    "estimatedTime": {
+      "estimatedManualMinutesForScope": 24,
+      "estimatedMinutesSaved": 16,
+      "manualBaselineMinutes": 12,
+      "manualBaselineSampleItemCount": 2,
+      "measuredBaseline": true,
+      "operatorMinutes": 8
+    },
+    "feedback": {
+      "fieldsLost": 0,
+      "fieldsRoundTripped": 3,
+      "feedbackRounds": 2,
+      "offlineNetworkRequests": 0,
+      "packetValidationFailures": 0,
+      "reviewMinutes": 5
+    },
+    "idempotency": {
+      "passed": true,
+      "secondRunWrites": 0
+    },
+    "proposalAcceptance": {
+      "acceptedUnchanged": 1,
+      "edited": 0,
+      "percent": 100,
+      "rejected": 0,
+      "total": 1
+    },
+    "questionRate": {
+      "asked": 1,
+      "percent": 25,
+      "reused": 0
+    },
+    "writeVerification": {
+      "attempts": 1,
+      "noOps": 1,
+      "percent": 100,
+      "retries": 0,
+      "verified": 1
+    }
+  },
+  "policyVersion": "paisano:1.0.0",
+  "providerMode": "DRIVE_LAB",
+  "recordedAt": "2026-08-08T18:40:00.000Z",
+  "rehearsalId": "pilot-rehearsal-synthetic-1",
+  "safetyThresholds": [
+    {
+      "actual": 100,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "VISIBLE_SCAN_COVERAGE",
+      "passed": true,
+      "required": "100% or every gap named"
+    },
+    {
+      "actual": 0,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "UNAPPROVED_WRITES",
+      "passed": true,
+      "required": 0
+    },
+    {
+      "actual": 100,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "VERIFIED_WRITES",
+      "passed": true,
+      "required": 100
+    },
+    {
+      "actual": 0,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "REPEATED_WRITES",
+      "passed": true,
+      "required": 0
+    },
+    {
+      "actual": 0,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "AMBIGUOUS_ACTIONS_EXECUTED",
+      "passed": true,
+      "required": 0
+    },
+    {
+      "actual": 0,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "FEEDBACK_FIELDS_LOST",
+      "passed": true,
+      "required": 0
+    },
+    {
+      "actual": 0,
+      "kind": "SAFETY_THRESHOLD",
+      "measure": "OFFLINE_NETWORK_REQUESTS",
+      "passed": true,
+      "required": 0
+    }
+  ],
+  "scanGeneration": "scan-pilot-synthetic-1",
+  "version": 1
+}

@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fixture-backed read and planning CLI > scans, inventories, asks, decides, and rebuilds in human and JSON modes > concise human CLI transcript 1`] = `
+"Scan id_f07670c7826e · policy 1.0.0
+Scanned 2 items in 1 pages.
+Coverage is complete for the selected fixture scope.
+Scan id_f07670c7826e · policy 1.0.0
+Plan 7fbc265cef8e has 1 actions and 3 blockers.
+- NEEDS_REVIEW id_f182d47567c8
+Scan id_f07670c7826e · policy 1.0.0
+Saved human decision id_17413cc57db0 for id_ddfaa877ad0a."
+`;
+
+exports[`fixture-backed read and planning CLI > scans, inventories, asks, decides, and rebuilds in human and JSON modes > stable JSON CLI output 1`] = `
+{
+  "inventory": {
+    "command": "inventory",
+    "data": {
+      "deniedItemCount": 0,
+      "itemCount": 2,
+      "items": [
+        {
+          "canRead": true,
+          "canWrite": true,
+          "id": "invoice-private-id",
+          "mimeType": "application/pdf",
+          "name": "Hotel Paisano Invoice draft.pdf",
+          "parentIds": [
+            "fixture-root",
+          ],
+          "shortcutTargetId": null,
+          "trashed": false,
+        },
+      ],
+      "mode": "search",
+      "query": "Invoice",
+      "rootId": "fixture-root",
+      "shortcutCount": 0,
+      "warningCount": 0,
+    },
+    "policyVersion": "1.0.0",
+    "scanGeneration": "scan-cli-1",
+    "status": "SUCCESS",
+  },
+  "plan": {
+    "command": "plan",
+    "data": {
+      "actionCount": 1,
+      "actions": [
+        {
+          "actionId": "act_3f701494c002fba5ad5804b1fb65980f",
+          "reviewState": "Pending",
+          "targetId": "invoice-private-id",
+          "type": "RENAME",
+        },
+      ],
+      "approvalEligible": true,
+      "blockers": [],
+      "effectiveActionCount": 1,
+      "planHash": "53f9c03984d23ddbe9613ac9dc1920ff6a9fb18900b0a7b3079a793f383b0282",
+      "questionCount": 0,
+    },
+    "policyVersion": "1.0.0",
+    "scanGeneration": "scan-cli-1",
+    "status": "SUCCESS",
+  },
+}
+`;

@@ -1,0 +1,14 @@
+[
+  {
+    "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+    "template": "{deal}/{documentType}/{date}-{entity}-{title}"
+  },
+  {
+    "reasonCode": "PAISANO.COMMUNICATIONS.DIRECT_OPTION",
+    "template": "---/communications/{name}"
+  },
+  {
+    "reasonCode": "PAISANO.COMMUNICATIONS.LOGGED_OPTION",
+    "template": "---/Logged/Communications/{name}"
+  }
+]

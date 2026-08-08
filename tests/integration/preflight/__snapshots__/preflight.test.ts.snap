@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`whole-plan preflight and zero-write dry-run > prints the exact ordered rename and shortcut operations with zero mutations 1`] = `
+{
+  "approvalChecksum": "fd29b9ec28f6d310d2f23367612c054f0d64cfb5c2b353e52a3962e54f4cb229",
+  "checkedAt": "2026-08-08T17:30:00.000Z",
+  "issues": [],
+  "operations": [
+    {
+      "actionId": "act_1db7562a73457ec815b9767ef04df114",
+      "disposition": "Write",
+      "reason": "Rename invoice-1 to 2026-08-01 - Hotel Paisano - Invoice.pdf because PAISANO.NAME.DEAL_DOCUMENT.",
+      "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      "request": {
+        "expectedModifiedTime": "2026-08-08T12:00:00.000Z",
+        "name": "2026-08-01 - Hotel Paisano - Invoice.pdf",
+        "targetId": "invoice-1",
+      },
+      "targetId": "invoice-1",
+      "type": "RENAME",
+    },
+    {
+      "actionId": "act_579cbc7c5f2eecc1b9b0aec9a546e1bc",
+      "disposition": "Write",
+      "reason": "Create a shortcut for contract-1 in organized because PAISANO.SHORTCUT.DEAL_DOCUMENT.",
+      "reasonCode": "PAISANO.SHORTCUT.DEAL_DOCUMENT",
+      "request": {
+        "name": "2026 - Hotel Paisano - Contract",
+        "parentId": "organized",
+        "targetId": "contract-1",
+      },
+      "targetId": "contract-1",
+      "type": "CREATE_SHORTCUT",
+    },
+  ],
+  "planHash": "f9e5bc5f1a2dd426cfe5c7dde3a2afb40ef5619fa9689b83acb4a5bdf978b88f",
+  "status": "Ready",
+  "writeCount": 0,
+}
+`;

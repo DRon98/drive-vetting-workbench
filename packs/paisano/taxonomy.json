@@ -1,0 +1,12 @@
+[
+  { "id": "operations", "label": "Operations", "parentId": null },
+  {
+    "id": "communications",
+    "label": "Communications",
+    "parentId": "operations"
+  },
+  { "id": "bookkeeping", "label": "Bookkeeping", "parentId": "operations" },
+  { "id": "deals", "label": "Deals", "parentId": null },
+  { "id": "data-room", "label": "Data Room", "parentId": "deals" },
+  { "id": "archives", "label": "Archives", "parentId": null }
+]

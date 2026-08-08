@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "scenarios": [
+    {
+      "name": "clean",
+      "rootId": "clean-root",
+      "snapshotHash": "149227927367317685a6e8e7c24b523a4817f7edbbf1cdc13ab3842b65f0e8cf",
+      "proves": ["compliant-file", "content-export"]
+    },
+    {
+      "name": "messy-paisano",
+      "rootId": "messy-root",
+      "snapshotHash": "50c918e393abd406632c95403e01c2cf859b86e0e334698c0ec23941fc721b06",
+      "proves": ["nested-folder", "rename-candidate", "existing-shortcut"]
+    },
+    {
+      "name": "pagination-gap",
+      "rootId": "pagination-root",
+      "snapshotHash": "0c650376d74012b72d2fe9ccb02ea8bd535097bd3d18f5975cd6f08180ec22af",
+      "proves": ["multiple-pages", "final-page-permission-gap"]
+    },
+    {
+      "name": "protected-archive",
+      "rootId": "protected-root",
+      "snapshotHash": "4aa62995a11898ac71f948b94b9a4373d6ad146fde831a1d84d127d7ebb963c2",
+      "proves": ["archive-hierarchy", "write-denied-original"]
+    },
+    {
+      "name": "shortcut-cycle",
+      "rootId": "cycle-root",
+      "snapshotHash": "033bfa0430ac1393a4729d8814620e627ae450c5e3973831f60af80f99a2033e",
+      "proves": ["shortcut-cycle"]
+    },
+    {
+      "name": "stale-after-approval",
+      "rootId": "stale-root",
+      "snapshotHash": "e6c7e593a27ed31353e70f39189c7c180fd2807be954817dbfb2038c6db6dcd9",
+      "proves": ["rename-precondition", "stale-state"]
+    },
+    {
+      "name": "partial-failure",
+      "rootId": "partial-root",
+      "snapshotHash": "804e5e31b85016de2e65efcfb5fa12b320862150d76f5b249c0f28429c9875fb",
+      "proves": ["first-write-success", "second-write-failure"]
+    }
+  ]
+}

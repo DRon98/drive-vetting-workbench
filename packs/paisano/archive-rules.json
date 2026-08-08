@@ -1,0 +1,32 @@
+[
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+    "selector": "flag:frozen-archive"
+  },
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.CONFIGURED",
+    "selector": "flag:configured-archive"
+  },
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.DEAL_IDENTITY",
+    "selector": "archive-identity:deal"
+  },
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.SOURCE_IDENTITY",
+    "selector": "archive-identity:source"
+  },
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.SENDER_IDENTITY",
+    "selector": "archive-identity:sender"
+  },
+  {
+    "preserveHierarchy": true,
+    "reasonCode": "PAISANO.ARCHIVE.DATE_IDENTITY",
+    "selector": "archive-identity:date"
+  }
+]

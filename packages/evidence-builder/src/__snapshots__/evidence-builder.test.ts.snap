@@ -1,0 +1,1182 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`deterministic evidence bundles > blocks a reference document observed under another deal > cross-deal evidence bundle 1`] = `
+{
+  "bundle": {
+    "candidateDocumentTypes": [
+      {
+        "confidence": 0.98,
+        "documentTypeId": "closing-record",
+      },
+    ],
+    "candidateEntities": [
+      {
+        "confidence": 0.98,
+        "entityId": "hotel-paisano",
+      },
+    ],
+    "conflicts": [
+      {
+        "code": "CROSS_DEAL_REFERENCE",
+        "material": true,
+        "message": "Observed deal context for cross-deal-reference conflicts with declared active deal deal-alpha.",
+      },
+    ],
+    "matchedRules": [
+      {
+        "policyLocator": "paisano:1.0.0/document-types.json#closing-record",
+        "reasonCode": "PAISANO.DOCUMENT_TYPE.CUE_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/entities.json#Hotel%20Paisano",
+        "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      },
+    ],
+    "observedFacts": [
+      {
+        "field": "context.activeDealId",
+        "id": "fact_27c7299c5d1af0889da5a8c5f6896022a0808f1badb642af900c8c2df6b57aa4",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:active-deal",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "item.contentFingerprint",
+        "id": "fact_a2e1cefe239335063a5accff5242a28d1061629dc3b276ebc57ad84d4bbfb697",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#contentFingerprint",
+        "value": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      },
+      {
+        "field": "item.contentSnippet",
+        "id": "fact_794e403a5377940126ccfa514c7b5e2655df7ddceaafd8f7ca6938a38419b17e",
+        "source": "Observed",
+        "sourceLocator": "provider:cross-deal-reference#export:text/plain",
+        "value": "From: synthetic.sender@example.test
+Synthetic fixture evidence.",
+      },
+      {
+        "field": "item.createdTime",
+        "id": "fact_4d9868073e5fc972c2eb92e5505039705033d18c4b999f2f3da4dc1ecae5d85a",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#createdTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.mimeType",
+        "id": "fact_540d2f8d52d73d769c729c164b5fea17e1bd5a45ceb697fcc871ed92156e8271",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#mimeType",
+        "value": "application/pdf",
+      },
+      {
+        "field": "item.modifiedTime",
+        "id": "fact_4ed9d88b907d9785185ca8c34cbf9ac49a572ecf93812b4db68bad4c17f9b08b",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#modifiedTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.name",
+        "id": "fact_a2b35dc2247be34da128f2e722ee08b70caf97a1e152f8999119012559c481ae",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#name",
+        "value": "Hotel Paisano Closing Record.pdf",
+      },
+      {
+        "field": "item.parentIds",
+        "id": "fact_f116c783b29023db17a2774ca04804be4c56b98096b8b342733925fbd07a91f4",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#parentIds",
+        "value": [
+          "folder-deal-beta",
+        ],
+      },
+      {
+        "field": "item.permissions",
+        "id": "fact_1203932e4c2dd88b8056f8b3dc0c5216f0466b2b6a0e9a39600d891f63512ba5",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#permissions",
+        "value": {
+          "canRead": true,
+          "canWrite": false,
+        },
+      },
+      {
+        "field": "item.sizeBytes",
+        "id": "fact_6b71ad13eeb8d6f411b9fb2c8a26090f65e8d528311bea9006fa7399fdab85d2",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#sizeBytes",
+        "value": 512,
+      },
+      {
+        "field": "item.trashed",
+        "id": "fact_32a8128e57a0d41113e01ea5f355ac80659f90220dcc438e1db8bf3f89fe8bb8",
+        "source": "Observed",
+        "sourceLocator": "drive:item:cross-deal-reference#trashed",
+        "value": false,
+      },
+      {
+        "field": "path.ancestor",
+        "id": "fact_7a8411285165fd82b38c9b30c554812f6b46674ef4d077a348f1425c356ea801",
+        "source": "Observed",
+        "sourceLocator": "drive:item:folder-deal-beta#name",
+        "value": {
+          "id": "folder-deal-beta",
+          "name": "Deal Beta Reference",
+        },
+      },
+      {
+        "field": "path.dealId",
+        "id": "fact_c3efddbcf74da11867cbb1eef88f0d1da6f9251e45145d25888df30d70726794",
+        "source": "Observed",
+        "sourceLocator": "drive:path:folder-deal-beta",
+        "value": "deal-beta",
+      },
+    ],
+    "sourceLocators": [
+      "context:active-deal",
+      "drive:item:cross-deal-reference#contentFingerprint",
+      "drive:item:cross-deal-reference#createdTime",
+      "drive:item:cross-deal-reference#mimeType",
+      "drive:item:cross-deal-reference#modifiedTime",
+      "drive:item:cross-deal-reference#name",
+      "drive:item:cross-deal-reference#parentIds",
+      "drive:item:cross-deal-reference#permissions",
+      "drive:item:cross-deal-reference#sizeBytes",
+      "drive:item:cross-deal-reference#trashed",
+      "drive:item:folder-deal-beta#name",
+      "drive:path:folder-deal-beta",
+      "paisano:1.0.0/document-types.json#closing-record",
+      "paisano:1.0.0/entities.json#Hotel%20Paisano",
+      "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+      "provider:cross-deal-reference#export:text/plain",
+    ],
+    "targetId": "cross-deal-reference",
+  },
+  "context": {
+    "archive": {
+      "actionType": "KEEP",
+      "identityComponents": [],
+      "isArchive": false,
+      "isConfigured": false,
+      "isFrozen": false,
+      "itemId": "cross-deal-reference",
+      "matchedRules": [],
+      "preserveHierarchy": false,
+      "reasonCode": "PAISANO.ARCHIVE.NOT_AN_ARCHIVE",
+    },
+    "protected": {
+      "actionType": "KEEP",
+      "flags": [],
+      "itemId": "cross-deal-reference",
+      "matchedRules": [],
+      "reasonCode": "PAISANO.PROTECTED.NO_RULE_MATCH",
+    },
+  },
+  "duplicateCandidates": [],
+  "namingParts": [
+    {
+      "confidence": 0.98,
+      "kind": "entity",
+      "sourceLocators": [
+        "drive:item:cross-deal-reference#name",
+      ],
+      "value": "hotel-paisano",
+    },
+    {
+      "confidence": 0.98,
+      "kind": "document-type",
+      "sourceLocators": [
+        "drive:item:cross-deal-reference#name",
+      ],
+      "value": "closing-record",
+    },
+    {
+      "confidence": 0.9,
+      "kind": "sender",
+      "sourceLocators": [
+        "provider:cross-deal-reference#export:text/plain",
+      ],
+      "value": "synthetic.sender@example.test",
+    },
+  ],
+  "policyVersion": "1.0.0",
+  "reviewState": "NEEDS_REVIEW",
+  "scanGeneration": "generation-evidence",
+}
+`;
+
+exports[`deterministic evidence bundles > builds simple document-type and naming candidates > simple evidence bundle 1`] = `
+{
+  "bundle": {
+    "candidateDocumentTypes": [
+      {
+        "confidence": 0.98,
+        "documentTypeId": "invoice",
+      },
+    ],
+    "candidateEntities": [
+      {
+        "confidence": 0.98,
+        "entityId": "hotel-paisano",
+      },
+    ],
+    "conflicts": [],
+    "matchedRules": [
+      {
+        "policyLocator": "paisano:1.0.0/document-types.json#invoice",
+        "reasonCode": "PAISANO.DOCUMENT_TYPE.CUE_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/entities.json#Hotel%20Paisano",
+        "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      },
+    ],
+    "observedFacts": [
+      {
+        "field": "context.activeDealId",
+        "id": "fact_0ca0a8b47d858a184d083550ec0bd65fec4c1ac6c63da6abeb9252aac2164d1b",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:active-deal",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "item.contentFingerprint",
+        "id": "fact_12118804913bd59e59b387157791c1f7138cfbe6e859068fed8d9b5e616f36e1",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#contentFingerprint",
+        "value": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      },
+      {
+        "field": "item.contentSnippet",
+        "id": "fact_34ae84ff4da6de063aa25da95b98c450ac8a230ef765ccde1c035c6fd7441800",
+        "source": "Observed",
+        "sourceLocator": "provider:simple-invoice#export:text/plain",
+        "value": "From: billing@example.test
+Invoice 2048",
+      },
+      {
+        "field": "item.createdTime",
+        "id": "fact_0b391fa0d049e0487b2107845afd97116b44475f7b0cbdd9091a496b9170b2cf",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#createdTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.mimeType",
+        "id": "fact_a7f165245c0a038b776f936fdd513c8d6f61a8adc88660cd56f417d43705a6f2",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#mimeType",
+        "value": "application/pdf",
+      },
+      {
+        "field": "item.modifiedTime",
+        "id": "fact_48fe886d7c5e232a86f178afc53a69e47cac12213f59256b1b4b2bab7fb7736e",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#modifiedTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.name",
+        "id": "fact_0283505d8127c7ada7459dfdfe250bfbf0afd0ba0fbaa13963d7faa716e65cf4",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#name",
+        "value": "2026-07-15 Hotel Paisano Invoice 2048.pdf",
+      },
+      {
+        "field": "item.parentIds",
+        "id": "fact_9a08372ed4f2cbade5d062483e1ba84d9b40b7004dbba3ab52b9a18f0c5f9128",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#parentIds",
+        "value": [
+          "folder-deal-alpha",
+        ],
+      },
+      {
+        "field": "item.permissions",
+        "id": "fact_bcec7cb400869a132cad57cd164d6e2d44b15d714e0a3d21517c6344a3f12003",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#permissions",
+        "value": {
+          "canRead": true,
+          "canWrite": false,
+        },
+      },
+      {
+        "field": "item.sizeBytes",
+        "id": "fact_51f9399bf5dfc99825abeae1fae589986e79b8af674c4f74f97bd1297c2cff74",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#sizeBytes",
+        "value": 512,
+      },
+      {
+        "field": "item.trashed",
+        "id": "fact_4c5690dcf380c3b89980c8ee6ad6c7463bc8a23c5283719182f6609976cff230",
+        "source": "Observed",
+        "sourceLocator": "drive:item:simple-invoice#trashed",
+        "value": false,
+      },
+      {
+        "field": "path.ancestor",
+        "id": "fact_898093cc615ea320931c31d2e5143eca8a6f690a554bb39469b9b0881880e5d7",
+        "source": "Observed",
+        "sourceLocator": "drive:item:folder-deal-alpha#name",
+        "value": {
+          "id": "folder-deal-alpha",
+          "name": "Deal Alpha",
+        },
+      },
+      {
+        "field": "path.dealId",
+        "id": "fact_82c848a787fe5c81ce96452fbafc64466a327fd9e6e0d7cd23b272e9b386b152",
+        "source": "Observed",
+        "sourceLocator": "drive:path:folder-deal-alpha",
+        "value": "deal-alpha",
+      },
+    ],
+    "sourceLocators": [
+      "context:active-deal",
+      "drive:item:folder-deal-alpha#name",
+      "drive:item:simple-invoice#contentFingerprint",
+      "drive:item:simple-invoice#createdTime",
+      "drive:item:simple-invoice#mimeType",
+      "drive:item:simple-invoice#modifiedTime",
+      "drive:item:simple-invoice#name",
+      "drive:item:simple-invoice#parentIds",
+      "drive:item:simple-invoice#permissions",
+      "drive:item:simple-invoice#sizeBytes",
+      "drive:item:simple-invoice#trashed",
+      "drive:path:folder-deal-alpha",
+      "paisano:1.0.0/document-types.json#invoice",
+      "paisano:1.0.0/entities.json#Hotel%20Paisano",
+      "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+      "provider:simple-invoice#export:text/plain",
+    ],
+    "targetId": "simple-invoice",
+  },
+  "context": {
+    "archive": {
+      "actionType": "KEEP",
+      "identityComponents": [],
+      "isArchive": false,
+      "isConfigured": false,
+      "isFrozen": false,
+      "itemId": "simple-invoice",
+      "matchedRules": [],
+      "preserveHierarchy": false,
+      "reasonCode": "PAISANO.ARCHIVE.NOT_AN_ARCHIVE",
+    },
+    "protected": {
+      "actionType": "KEEP",
+      "flags": [],
+      "itemId": "simple-invoice",
+      "matchedRules": [],
+      "reasonCode": "PAISANO.PROTECTED.NO_RULE_MATCH",
+    },
+  },
+  "duplicateCandidates": [],
+  "namingParts": [
+    {
+      "confidence": 0.98,
+      "kind": "date",
+      "sourceLocators": [
+        "drive:item:simple-invoice#name",
+      ],
+      "value": "2026-07-15",
+    },
+    {
+      "confidence": 0.98,
+      "kind": "entity",
+      "sourceLocators": [
+        "drive:item:simple-invoice#name",
+      ],
+      "value": "hotel-paisano",
+    },
+    {
+      "confidence": 0.98,
+      "kind": "document-type",
+      "sourceLocators": [
+        "drive:item:simple-invoice#name",
+        "provider:simple-invoice#export:text/plain",
+      ],
+      "value": "invoice",
+    },
+    {
+      "confidence": 0.9,
+      "kind": "sender",
+      "sourceLocators": [
+        "provider:simple-invoice#export:text/plain",
+      ],
+      "value": "billing@example.test",
+    },
+    {
+      "confidence": 0.85,
+      "kind": "title",
+      "sourceLocators": [
+        "drive:item:simple-invoice#name",
+      ],
+      "value": "2048",
+    },
+  ],
+  "policyVersion": "1.0.0",
+  "reviewState": "DETERMINISTIC",
+  "scanGeneration": "generation-evidence",
+}
+`;
+
+exports[`deterministic evidence bundles > explains a strong duplicate and ignores equal size with different content > duplicate evidence bundle 1`] = `
+{
+  "bundle": {
+    "candidateDocumentTypes": [
+      {
+        "confidence": 0.98,
+        "documentTypeId": "agreement",
+      },
+    ],
+    "candidateEntities": [
+      {
+        "confidence": 0.98,
+        "entityId": "hotel-paisano",
+      },
+    ],
+    "conflicts": [
+      {
+        "code": "EXACT_DUPLICATE",
+        "material": false,
+        "message": "Item duplicate-copy matches duplicate-source by strong fingerprint and compatible stable metadata.",
+      },
+    ],
+    "matchedRules": [
+      {
+        "policyLocator": "paisano:1.0.0/document-types.json#agreement",
+        "reasonCode": "PAISANO.DOCUMENT_TYPE.CUE_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/entities.json#Hotel%20Paisano",
+        "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      },
+    ],
+    "observedFacts": [
+      {
+        "field": "context.activeDealId",
+        "id": "fact_7d91e5f49d1e09060844988898ee366d0d16531a71ca2265d2c89cfc04c78a79",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:active-deal",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "item.contentFingerprint",
+        "id": "fact_2a27fbfaea9f8e7e40835f160f85f4e6ce2d07ce51733366f4b4ef137c74724a",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#contentFingerprint",
+        "value": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      },
+      {
+        "field": "item.contentSnippet",
+        "id": "fact_1e1a33a9fdb1fa2a484ccda85251665ff3505ac85fb995e5fd83b9234b8c3040",
+        "source": "Observed",
+        "sourceLocator": "provider:duplicate-source#export:text/plain",
+        "value": "From: synthetic.sender@example.test
+Synthetic fixture evidence.",
+      },
+      {
+        "field": "item.createdTime",
+        "id": "fact_a867589deecd838494fbb9e5388137e9c29664c5e5046fc2e8a175226f990625",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#createdTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.mimeType",
+        "id": "fact_8aca1a694dd6970800f6ffdeb78495eb1b5141358708a6a20365d558179dd4b8",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#mimeType",
+        "value": "application/pdf",
+      },
+      {
+        "field": "item.modifiedTime",
+        "id": "fact_576098b9c605781dde0d6e23181fb0546e116ea434022d42caab5504214a64f0",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#modifiedTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.name",
+        "id": "fact_2c69e10a97119b2e4a98fcf5bce5a02fe6741b05491a575a961539c6e2238e1b",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#name",
+        "value": "Hotel Paisano Agreement.pdf",
+      },
+      {
+        "field": "item.parentIds",
+        "id": "fact_69cd23c455d2d6571d6d9ff9fe456ddf2b70475ccfb5f007e4445622adfbbe7e",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#parentIds",
+        "value": [
+          "folder-deal-alpha",
+        ],
+      },
+      {
+        "field": "item.permissions",
+        "id": "fact_2cf7fb30338745321e3d93f99614d2c3c40c94387a9f82f6b9839771e488ed8f",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#permissions",
+        "value": {
+          "canRead": true,
+          "canWrite": false,
+        },
+      },
+      {
+        "field": "item.sizeBytes",
+        "id": "fact_c873f624e7fe07780d32e5a2eaea27b921761bd4adb89602d5771bedcbb206d7",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#sizeBytes",
+        "value": 512,
+      },
+      {
+        "field": "item.trashed",
+        "id": "fact_ea5cc7aa895a492a2908f797f4c50a6c6249bc4c383459e0750d1fa39f5772be",
+        "source": "Observed",
+        "sourceLocator": "drive:item:duplicate-source#trashed",
+        "value": false,
+      },
+      {
+        "field": "path.ancestor",
+        "id": "fact_57e30c6717a7dc1019aa2cfb64ff8c6cc7cbe72f56a98c4b2581523d2aa15909",
+        "source": "Observed",
+        "sourceLocator": "drive:item:folder-deal-alpha#name",
+        "value": {
+          "id": "folder-deal-alpha",
+          "name": "Deal Alpha",
+        },
+      },
+      {
+        "field": "path.dealId",
+        "id": "fact_3e2aae3930ff79cd08fa4c72a020f2e93226edf6024f9b5cc0825eb379067eeb",
+        "source": "Observed",
+        "sourceLocator": "drive:path:folder-deal-alpha",
+        "value": "deal-alpha",
+      },
+    ],
+    "sourceLocators": [
+      "context:active-deal",
+      "drive:item:duplicate-copy#contentFingerprint",
+      "drive:item:duplicate-copy#mimeType",
+      "drive:item:duplicate-copy#sizeBytes",
+      "drive:item:duplicate-source#contentFingerprint",
+      "drive:item:duplicate-source#createdTime",
+      "drive:item:duplicate-source#mimeType",
+      "drive:item:duplicate-source#modifiedTime",
+      "drive:item:duplicate-source#name",
+      "drive:item:duplicate-source#parentIds",
+      "drive:item:duplicate-source#permissions",
+      "drive:item:duplicate-source#sizeBytes",
+      "drive:item:duplicate-source#trashed",
+      "drive:item:folder-deal-alpha#name",
+      "drive:path:folder-deal-alpha",
+      "paisano:1.0.0/document-types.json#agreement",
+      "paisano:1.0.0/entities.json#Hotel%20Paisano",
+      "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+      "provider:duplicate-source#export:text/plain",
+    ],
+    "targetId": "duplicate-source",
+  },
+  "context": {
+    "archive": {
+      "actionType": "KEEP",
+      "identityComponents": [],
+      "isArchive": false,
+      "isConfigured": false,
+      "isFrozen": false,
+      "itemId": "duplicate-source",
+      "matchedRules": [],
+      "preserveHierarchy": false,
+      "reasonCode": "PAISANO.ARCHIVE.NOT_AN_ARCHIVE",
+    },
+    "protected": {
+      "actionType": "KEEP",
+      "flags": [],
+      "itemId": "duplicate-source",
+      "matchedRules": [],
+      "reasonCode": "PAISANO.PROTECTED.NO_RULE_MATCH",
+    },
+  },
+  "duplicateCandidates": [
+    {
+      "fingerprint": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "itemId": "duplicate-copy",
+      "matchedFields": [
+        "contentFingerprint",
+        "mimeType",
+        "sizeBytes",
+      ],
+      "sourceLocators": [
+        "drive:item:duplicate-copy#contentFingerprint",
+        "drive:item:duplicate-copy#mimeType",
+        "drive:item:duplicate-copy#sizeBytes",
+        "drive:item:duplicate-source#contentFingerprint",
+        "drive:item:duplicate-source#mimeType",
+        "drive:item:duplicate-source#sizeBytes",
+      ],
+    },
+  ],
+  "namingParts": [
+    {
+      "confidence": 0.98,
+      "kind": "entity",
+      "sourceLocators": [
+        "drive:item:duplicate-source#name",
+      ],
+      "value": "hotel-paisano",
+    },
+    {
+      "confidence": 0.98,
+      "kind": "document-type",
+      "sourceLocators": [
+        "drive:item:duplicate-source#name",
+      ],
+      "value": "agreement",
+    },
+    {
+      "confidence": 0.9,
+      "kind": "sender",
+      "sourceLocators": [
+        "provider:duplicate-source#export:text/plain",
+      ],
+      "value": "synthetic.sender@example.test",
+    },
+  ],
+  "policyVersion": "1.0.0",
+  "reviewState": "DETERMINISTIC",
+  "scanGeneration": "generation-evidence",
+}
+`;
+
+exports[`deterministic evidence bundles > retains archive identity and hierarchy-preservation context > archive evidence bundle 1`] = `
+{
+  "bundle": {
+    "candidateDocumentTypes": [],
+    "candidateEntities": [],
+    "conflicts": [
+      {
+        "code": "PROTECTED_TARGET",
+        "material": true,
+        "message": "Target archive-record matches protected policy context and requires review.",
+      },
+    ],
+    "matchedRules": [
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adate",
+        "reasonCode": "PAISANO.ARCHIVE.DATE_IDENTITY",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adeal",
+        "reasonCode": "PAISANO.ARCHIVE.DEAL_IDENTITY",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Asender",
+        "reasonCode": "PAISANO.ARCHIVE.SENDER_IDENTITY",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Asource",
+        "reasonCode": "PAISANO.ARCHIVE.SOURCE_IDENTITY",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Aconfigured-archive",
+        "reasonCode": "PAISANO.ARCHIVE.CONFIGURED",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Afrozen-archive",
+        "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Aconfigured-archive",
+        "reasonCode": "PAISANO.PROTECTED.CONFIGURED_ARCHIVE",
+      },
+    ],
+    "observedFacts": [
+      {
+        "field": "archive.identityComponents",
+        "id": "fact_c6c625cfcb7f0c2ac2294d968631929daa7644e134d4fea2fd680a781bd56f37",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:archive:archive-record",
+        "value": [
+          "date",
+          "deal",
+          "sender",
+          "source",
+        ],
+      },
+      {
+        "field": "archive.state",
+        "id": "fact_f67237b2bd1c8cb33fbea064670bcde2912a7a28eade6343f1ef76a0f1f58893",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:archive:archive-record",
+        "value": {
+          "isArchive": true,
+          "isConfigured": true,
+          "isFrozen": true,
+        },
+      },
+      {
+        "field": "context.activeDealId",
+        "id": "fact_5c62f251810d874fe0f32be71a221e14d0d81d6a557a888be3eadcb93d02aad6",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:active-deal",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "item.createdTime",
+        "id": "fact_59ad7bf3b387221c7a901a2b07f961955a0f5ecfad594b2dc964f8f0fa0fc64d",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#createdTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.mimeType",
+        "id": "fact_204c5d7bf6c9d369d3acde10a4a2cc553adb419a5e51f7206777c37277fe1268",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#mimeType",
+        "value": "application/vnd.google-apps.folder",
+      },
+      {
+        "field": "item.modifiedTime",
+        "id": "fact_7907934b9f72fa2e61262bcef8724ecddb6e5c5643b3000bed8f30bef2a8a31e",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#modifiedTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.name",
+        "id": "fact_6208e8963d84322a8e1bbc5cf8fc252dcf078e62718c1c0aa48174f67a516a4d",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#name",
+        "value": "2024-06-01 Sender Archive",
+      },
+      {
+        "field": "item.parentIds",
+        "id": "fact_d9e42187de0671f2267f05b1a39148dfbb78dde5f55580e6b4c4ffe49ac3d2b4",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#parentIds",
+        "value": [
+          "folder-deal-alpha",
+        ],
+      },
+      {
+        "field": "item.permissions",
+        "id": "fact_f1e9d5846ab85eb93b61af55faf197ff57ec133943888e0d96984295f796faf0",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#permissions",
+        "value": {
+          "canRead": true,
+          "canWrite": false,
+        },
+      },
+      {
+        "field": "item.trashed",
+        "id": "fact_998dd07b88ad5f38aca0d7a5d1f2996ccf8933a09192777c28a42d676e42953a",
+        "source": "Observed",
+        "sourceLocator": "drive:item:archive-record#trashed",
+        "value": false,
+      },
+      {
+        "field": "path.ancestor",
+        "id": "fact_2a6bc1b1e3390e8232bc7d7a61ba4047e216c7b929f67bc9a55d5c2138bea2e3",
+        "source": "Observed",
+        "sourceLocator": "drive:item:folder-deal-alpha#name",
+        "value": {
+          "id": "folder-deal-alpha",
+          "name": "Deal Alpha",
+        },
+      },
+      {
+        "field": "path.dealId",
+        "id": "fact_f651b2e922304d497329a9564b1d15ebf3bec242c7be902c1961a4593b220f28",
+        "source": "Observed",
+        "sourceLocator": "drive:path:folder-deal-alpha",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "protected.flags",
+        "id": "fact_29207537efaf98be73a7a8796d687d9018377aab1b19f7b48d8b00d102e606f3",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:protected:archive-record",
+        "value": [
+          "configured-archive",
+        ],
+      },
+    ],
+    "sourceLocators": [
+      "context:active-deal",
+      "context:archive:archive-record",
+      "context:protected:archive-record",
+      "drive:item:archive-record#createdTime",
+      "drive:item:archive-record#mimeType",
+      "drive:item:archive-record#modifiedTime",
+      "drive:item:archive-record#name",
+      "drive:item:archive-record#parentIds",
+      "drive:item:archive-record#permissions",
+      "drive:item:archive-record#trashed",
+      "drive:item:folder-deal-alpha#name",
+      "drive:path:folder-deal-alpha",
+      "paisano:1.0.0/archive-rules.json#archive-identity%3Adate",
+      "paisano:1.0.0/archive-rules.json#archive-identity%3Adeal",
+      "paisano:1.0.0/archive-rules.json#archive-identity%3Asender",
+      "paisano:1.0.0/archive-rules.json#archive-identity%3Asource",
+      "paisano:1.0.0/archive-rules.json#flag%3Aconfigured-archive",
+      "paisano:1.0.0/archive-rules.json#flag%3Afrozen-archive",
+      "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+      "paisano:1.0.0/protected-items.json#flag%3Aconfigured-archive",
+    ],
+    "targetId": "archive-record",
+  },
+  "context": {
+    "archive": {
+      "actionType": "PRESERVE_ARCHIVE",
+      "identityComponents": [
+        "date",
+        "deal",
+        "sender",
+        "source",
+      ],
+      "isArchive": true,
+      "isConfigured": true,
+      "isFrozen": true,
+      "itemId": "archive-record",
+      "matchedRules": [
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Afrozen-archive",
+          "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#flag%3Aconfigured-archive",
+          "reasonCode": "PAISANO.ARCHIVE.CONFIGURED",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adeal",
+          "reasonCode": "PAISANO.ARCHIVE.DEAL_IDENTITY",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Asource",
+          "reasonCode": "PAISANO.ARCHIVE.SOURCE_IDENTITY",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Asender",
+          "reasonCode": "PAISANO.ARCHIVE.SENDER_IDENTITY",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/archive-rules.json#archive-identity%3Adate",
+          "reasonCode": "PAISANO.ARCHIVE.DATE_IDENTITY",
+        },
+      ],
+      "preserveHierarchy": true,
+      "reasonCode": "PAISANO.ARCHIVE.FROZEN",
+    },
+    "protected": {
+      "actionType": "NEEDS_REVIEW",
+      "flags": [
+        "configured-archive",
+      ],
+      "itemId": "archive-record",
+      "matchedRules": [
+        {
+          "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Aconfigured-archive",
+          "reasonCode": "PAISANO.PROTECTED.CONFIGURED_ARCHIVE",
+        },
+      ],
+      "reasonCode": "PAISANO.PROTECTED.CONFIGURED_ARCHIVE",
+    },
+  },
+  "duplicateCandidates": [],
+  "namingParts": [
+    {
+      "confidence": 0.98,
+      "kind": "date",
+      "sourceLocators": [
+        "drive:item:archive-record#name",
+      ],
+      "value": "2024-06-01",
+    },
+    {
+      "confidence": 0.85,
+      "kind": "title",
+      "sourceLocators": [
+        "drive:item:archive-record#name",
+      ],
+      "value": "Sender Archive",
+    },
+  ],
+  "policyVersion": "1.0.0",
+  "reviewState": "NEEDS_REVIEW",
+  "scanGeneration": "generation-evidence",
+}
+`;
+
+exports[`deterministic evidence bundles > retains protected target context and matched policy rules > protected evidence bundle 1`] = `
+{
+  "bundle": {
+    "candidateDocumentTypes": [
+      {
+        "confidence": 0.98,
+        "documentTypeId": "agreement",
+      },
+    ],
+    "candidateEntities": [
+      {
+        "confidence": 0.98,
+        "entityId": "hotel-paisano",
+      },
+    ],
+    "conflicts": [
+      {
+        "code": "PROTECTED_TARGET",
+        "material": true,
+        "message": "Target protected-original matches protected policy context and requires review.",
+      },
+    ],
+    "matchedRules": [
+      {
+        "policyLocator": "paisano:1.0.0/document-types.json#agreement",
+        "reasonCode": "PAISANO.DOCUMENT_TYPE.CUE_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/entities.json#Hotel%20Paisano",
+        "reasonCode": "PAISANO.ENTITY.ALIAS_MATCH",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+        "reasonCode": "PAISANO.NAME.DEAL_DOCUMENT",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Adata-room",
+        "reasonCode": "PAISANO.PROTECTED.DATA_ROOM",
+      },
+      {
+        "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Asigned-document",
+        "reasonCode": "PAISANO.PROTECTED.SIGNED_DOCUMENT",
+      },
+    ],
+    "observedFacts": [
+      {
+        "field": "context.activeDealId",
+        "id": "fact_d56c87853c09c61e666e80aa1714a32509ad726f0710088ebbf897751f29e5c8",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:active-deal",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "item.contentFingerprint",
+        "id": "fact_1c00642baeb0b30afcd320df231df8e273370bb78e2cc3cf415979f547aa92c0",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#contentFingerprint",
+        "value": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      },
+      {
+        "field": "item.contentSnippet",
+        "id": "fact_f769e060609cf5b214ac2c122191a784d0f45f08f523be3b1a939d4262a8642b",
+        "source": "Observed",
+        "sourceLocator": "provider:protected-original#export:text/plain",
+        "value": "From: synthetic.sender@example.test
+Synthetic fixture evidence.",
+      },
+      {
+        "field": "item.createdTime",
+        "id": "fact_21c93db08df34dbcd928c1c8ab76f056c369a519801d8a932db2ab7315adedc2",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#createdTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.mimeType",
+        "id": "fact_f5c0389d7753a3e54b1dbf6164ef57b25bd7e3d72fc2e5208dcff28f480f34a9",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#mimeType",
+        "value": "application/pdf",
+      },
+      {
+        "field": "item.modifiedTime",
+        "id": "fact_1118e3082422ddf1b39c305dec31898f8cba707372ff8cc2dd9670c10561c6a2",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#modifiedTime",
+        "value": "2026-08-07T12:00:00.000Z",
+      },
+      {
+        "field": "item.name",
+        "id": "fact_6560e57bfef1c0650613cf8c0962a99c1a77f45d19803450e83f9c38ec0c792f",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#name",
+        "value": "Signed Hotel Paisano Agreement.pdf",
+      },
+      {
+        "field": "item.parentIds",
+        "id": "fact_861373484886b6fc959739370babc79a409d3007e5877dac14c9fa30eb28fe7d",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#parentIds",
+        "value": [
+          "folder-deal-alpha",
+        ],
+      },
+      {
+        "field": "item.permissions",
+        "id": "fact_00e7b6d2162e1777f426068501e01aefb4cf104148053075d0aae091fe313046",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#permissions",
+        "value": {
+          "canRead": true,
+          "canWrite": false,
+        },
+      },
+      {
+        "field": "item.sizeBytes",
+        "id": "fact_fb6f9f08afbfef5dfcd9ab336abfe37ecbc8848460266cc03a0e240c4534ef3d",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#sizeBytes",
+        "value": 512,
+      },
+      {
+        "field": "item.trashed",
+        "id": "fact_61a07df6bb5b9cb91fc2b77bb78df4567b599c7c7cd97438a1d25e65a2dd1c07",
+        "source": "Observed",
+        "sourceLocator": "drive:item:protected-original#trashed",
+        "value": false,
+      },
+      {
+        "field": "path.ancestor",
+        "id": "fact_a82a89b0ec70e79ffe65c46b8e96e4a43dde8cc606274a1a4bc7652bf6da7e2b",
+        "source": "Observed",
+        "sourceLocator": "drive:item:folder-deal-alpha#name",
+        "value": {
+          "id": "folder-deal-alpha",
+          "name": "Deal Alpha",
+        },
+      },
+      {
+        "field": "path.dealId",
+        "id": "fact_18d29672e4ea1ec8fc6ea7e869556913cb670da9550b3a1844057bf86aa2f6be",
+        "source": "Observed",
+        "sourceLocator": "drive:path:folder-deal-alpha",
+        "value": "deal-alpha",
+      },
+      {
+        "field": "protected.flags",
+        "id": "fact_029fd5100e0b34f5f611e6d936bfa027f1314c2bddd7cfeece1d9d6a37bc132a",
+        "source": "DeclaredContext",
+        "sourceLocator": "context:protected:protected-original",
+        "value": [
+          "data-room",
+          "signed-document",
+        ],
+      },
+    ],
+    "sourceLocators": [
+      "context:active-deal",
+      "context:protected:protected-original",
+      "drive:item:folder-deal-alpha#name",
+      "drive:item:protected-original#contentFingerprint",
+      "drive:item:protected-original#createdTime",
+      "drive:item:protected-original#mimeType",
+      "drive:item:protected-original#modifiedTime",
+      "drive:item:protected-original#name",
+      "drive:item:protected-original#parentIds",
+      "drive:item:protected-original#permissions",
+      "drive:item:protected-original#sizeBytes",
+      "drive:item:protected-original#trashed",
+      "drive:path:folder-deal-alpha",
+      "paisano:1.0.0/document-types.json#agreement",
+      "paisano:1.0.0/entities.json#Hotel%20Paisano",
+      "paisano:1.0.0/naming.json#PAISANO.NAME.DEAL_DOCUMENT",
+      "paisano:1.0.0/protected-items.json#flag%3Adata-room",
+      "paisano:1.0.0/protected-items.json#flag%3Asigned-document",
+      "provider:protected-original#export:text/plain",
+    ],
+    "targetId": "protected-original",
+  },
+  "context": {
+    "archive": {
+      "actionType": "KEEP",
+      "identityComponents": [],
+      "isArchive": false,
+      "isConfigured": false,
+      "isFrozen": false,
+      "itemId": "protected-original",
+      "matchedRules": [],
+      "preserveHierarchy": false,
+      "reasonCode": "PAISANO.ARCHIVE.NOT_AN_ARCHIVE",
+    },
+    "protected": {
+      "actionType": "NEEDS_REVIEW",
+      "flags": [
+        "data-room",
+        "signed-document",
+      ],
+      "itemId": "protected-original",
+      "matchedRules": [
+        {
+          "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Adata-room",
+          "reasonCode": "PAISANO.PROTECTED.DATA_ROOM",
+        },
+        {
+          "policyLocator": "paisano:1.0.0/protected-items.json#flag%3Asigned-document",
+          "reasonCode": "PAISANO.PROTECTED.SIGNED_DOCUMENT",
+        },
+      ],
+      "reasonCode": "PAISANO.PROTECTED.DATA_ROOM",
+    },
+  },
+  "duplicateCandidates": [],
+  "namingParts": [
+    {
+      "confidence": 0.98,
+      "kind": "entity",
+      "sourceLocators": [
+        "drive:item:protected-original#name",
+      ],
+      "value": "hotel-paisano",
+    },
+    {
+      "confidence": 0.98,
+      "kind": "document-type",
+      "sourceLocators": [
+        "drive:item:protected-original#name",
+      ],
+      "value": "agreement",
+    },
+    {
+      "confidence": 0.9,
+      "kind": "sender",
+      "sourceLocators": [
+        "provider:protected-original#export:text/plain",
+      ],
+      "value": "synthetic.sender@example.test",
+    },
+    {
+      "confidence": 0.85,
+      "kind": "title",
+      "sourceLocators": [
+        "drive:item:protected-original#name",
+      ],
+      "value": "Signed",
+    },
+  ],
+  "policyVersion": "1.0.0",
+  "reviewState": "NEEDS_REVIEW",
+  "scanGeneration": "generation-evidence",
+}
+`;
