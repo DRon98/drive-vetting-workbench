@@ -89,7 +89,7 @@
     "smoke:sqlite": "node --disable-warning=ExperimentalWarning scripts/check-sqlite.mjs",
     "check:workspace-boundary": "node scripts/check-workspace-boundary.mjs",
     "check:source-artifacts": "node scripts/check-source-artifacts.mjs",
-    "verify:scaffold": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test:unit && pnpm build && pnpm smoke:sqlite && pnpm check:workspace-boundary",
+    "verify:scaffold": "pnpm format:check && pnpm build && pnpm lint && pnpm typecheck && pnpm test:unit && pnpm smoke:sqlite && pnpm check:workspace-boundary",
     "verify:package": "pnpm build && pnpm format:check && pnpm check:source-artifacts && pnpm examples:check && pnpm docs:check && pnpm licenses:check && pnpm verify:cleanroom-quickstart && pnpm package:manifest:check && npm pack --dry-run --json",
     "verify": "pnpm verify:scaffold && pnpm test:integration && pnpm test:e2e && pnpm test:security && pnpm verify:package"
   },

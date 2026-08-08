@@ -14,6 +14,20 @@ describe("root verification scripts", () => {
     expect(rootPackage.scripts.verify).toContain("pnpm verify:scaffold");
   });
 
+  it("builds workspace declarations once before type-aware checks", () => {
+    const scaffoldScript = rootPackage.scripts["verify:scaffold"];
+    expect(scaffoldScript).toBeDefined();
+
+    const scaffoldSteps = scaffoldScript?.split(" && ") ?? [];
+    const buildIndex = scaffoldSteps.indexOf("pnpm build");
+
+    expect(scaffoldSteps.filter((step) => step === "pnpm build")).toHaveLength(
+      1,
+    );
+    expect(buildIndex).toBeLessThan(scaffoldSteps.indexOf("pnpm lint"));
+    expect(buildIndex).toBeLessThan(scaffoldSteps.indexOf("pnpm typecheck"));
+  });
+
   it.each(["test:integration", "test:e2e", "test:security"])(
     "does not let an empty %s suite pass",
     (scriptName) => {
